@@ -1,6 +1,6 @@
 # Annotation Guidelines: Implicit Meaning
 
-The goal of this annotation task is to collect sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, both sentences convey **the same meaning**.
+The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, both sentences convey **the same meaning**.
 
 For every item you will be shown two almost equivalent sentences, S1 and S2. However, the second sentence contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence.
 
@@ -8,7 +8,7 @@ The sentences were taken from two versions of the same wikiHow article, so you w
 
 Below you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
 
-If you check this box, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
+If you check the :grey-background[Yes] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
 
 ---
 
@@ -55,7 +55,7 @@ The added information is a logical premise or consequence given some mutual know
 ---
 
 #### **3. Omitted Complements**
-A reader would normally expect the information that was added to occur with the predicate due to the predicate's properties. 
+A reader would normally expect the information that was added to occur with the verb due to its properties. 
 
 [comment]: # (For instance, it is typical to mention the reason for surprise, however, it is possible to omit it, as the next example shows.)
 
