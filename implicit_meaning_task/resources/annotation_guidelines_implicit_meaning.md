@@ -54,8 +54,8 @@ The added information is a logical premise or consequence given some mutual know
 
 ---
 
-#### **3. Omitted Complements**
-A reader would normally expect the information that was added to occur with the verb due to its properties. 
+#### **3. Expected Information**
+The type of information (e.g. a reason, consequence, location) that was added is usually expected by the reader for the specific verb and can thus be inferred more easily – either from the verb itself, the context or reasoning. This category therefore often occurs in combination with other categories. 
 
 [comment]: # (For instance, it is typical to mention the reason for surprise, however, it is possible to omit it, as the next example shows.)
 
