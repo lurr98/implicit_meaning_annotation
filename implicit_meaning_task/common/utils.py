@@ -23,7 +23,8 @@ def format_sample(question: dict) -> None:
             unsafe_allow_html=True
         )
 
-    match = re.findall(r"<(.*)>", question["sentence_2"])
+    # sentence 1 and 2 are switched bc we decided to put the revision first
+    match = re.findall(r"<(.*)>", question["sentence_1"])
     blue_background = re.sub(r"<.*>", f'<span style="background-color: #1e3a56;\
             color: white;\
             padding: 2px 2px;\
@@ -31,7 +32,7 @@ def format_sample(question: dict) -> None:
     # formatted_string = f"**S1:** {question["sentence_1"]}\n##### **S2:** {blue_background}\n\n:grey-background[*Article name:*] &emsp;{question["article_name"]}\n\n:grey-background[*Context before:*] &nbsp;{question["context_before"]}\n\n:grey-background[*Context after:*] &emsp;{question["context_after"]}"
     # return formatted_string
 
-    labeled_paragraph("S1:", "&nbsp;" + question["sentence_1"], font_size="20px", font_weight="bold")
+    labeled_paragraph("S1:", "&nbsp;" + question["sentence_2"], font_size="20px", font_weight="bold")
     st.markdown("<div style='height: 1.2em;'></div>", unsafe_allow_html=True)  # vertical space
     labeled_paragraph("S2:", "&nbsp;" + blue_background, font_size="20px", font_weight="bold")
     st.markdown("<div style='height: 2em;'></div>", unsafe_allow_html=True)  # vertical space

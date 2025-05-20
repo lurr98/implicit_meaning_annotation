@@ -22,5 +22,21 @@
         "context_before": "If you suspect a bone is broken, try to keep the injured area immobilized and seek medical attention immediately.",
         "context_after": "Improper handling can lead to permanent damage, so it's crucial not to take unnecessary risks.",
         "correct_answer": "No"
+    },
+    "4": {
+        "sentence_1": "Make sure your wireless network is encrypted with WPA2.",
+        "sentence_2": "Make sure your wireless network is encrypted with WPA2 and that you use a strong password.",
+        "article_name": "Prevent_People_from_Tracking_You_on_the_Internet.txt",
+        "context_before": "Your home network is one of the most common entry points for tracking and unauthorized data collection. It's essential to secure your router settings to reduce these risks.",
+        "context_after": "This step helps protect your data from being intercepted by others on the same network and makes it harder for third parties to monitor your online activity.",
+        "correct_answer": "No"
+    },
+    "5": {
+        "sentence_1": "This will help with your tendancy.",
+        "sentence_2": "This will help with your tendancy to grip the handlebars too tightly.",
+        "article_name": "Race_Your_Street_Motorcycle.txt",
+        "context_before": "It's common for riders to unconsciously grip the handlebars too tightly when they're nervous or trying to maintain control at high speeds. Practicing deep, controlled breathing can help keep your muscles relaxed while riding.",
+        "context_after": "Loosening your grip not only improves handling but also prevents unnecessary strain on your arms during longer races.",
+        "correct_answer": "Yes"
     }
 }
