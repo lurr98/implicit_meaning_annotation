@@ -1,6 +1,6 @@
 # Annotation Guidelines: Implicit Meaning
 
-The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, both sentences convey **the same meaning**.
+The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the second sentence, both sentences convey **the same meaning**.
 
 For every item you will be shown two almost equivalent sentences, S1 and S2. However, the first sentence contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence.
 
