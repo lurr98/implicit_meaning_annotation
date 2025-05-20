@@ -28,7 +28,7 @@ def format_sample(question: dict) -> None:
     blue_background = re.sub(r"<.*>", f'<span style="background-color: #1e3a56;\
             color: white;\
             padding: 2px 2px;\
-            border-radius: 5px;">{match[0]}</span>', question["sentence_2"])
+            border-radius: 5px;">{match[0]}</span>', question["sentence_1"])
     # formatted_string = f"**S1:** {question["sentence_1"]}\n##### **S2:** {blue_background}\n\n:grey-background[*Article name:*] &emsp;{question["article_name"]}\n\n:grey-background[*Context before:*] &nbsp;{question["context_before"]}\n\n:grey-background[*Context after:*] &emsp;{question["context_after"]}"
     # return formatted_string
 
