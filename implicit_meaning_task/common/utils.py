@@ -96,7 +96,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     #     horizontal=True,
     #     index=None,)
 
-    st.markdown(":grey-background[Does the first sentence implicitly convey the same meaning as the second one?]")
+    st.markdown(":grey-background[Does the second sentence implicitly convey the same meaning as the first one?]")
 
     implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
     # col1, col2 = st.columns(2)
