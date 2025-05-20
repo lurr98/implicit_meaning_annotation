@@ -110,18 +110,18 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
         col1, col2 = st.columns(2)
 
         with col1:
-            context = st.checkbox(key=10 * index + 2, label="Context", value=context_val)
-            reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val)
-            complement = st.checkbox(key=10 * index + 4, label="Omitted Complement", value=complement_val)
-            instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val)
+            context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
+            reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
+            complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
+            instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")
 
         with col2:
             other = st.checkbox("Other", value=other_val)
-            comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val)
+            comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val, max_chars=200)
             if comment_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
     else:
-        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"No\" and explain your thoughts here:", value=comment_not_implicit_val)
+        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"No\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
         if comment_not_implicit:
             st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 

@@ -35,14 +35,4 @@ else:
         st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
 
-st.write("If you are ready to proceed with the guidelines, click the button below.")
-if 'clicked' not in st.session_state:
-    st.session_state.clicked = False
-
-def click_button():
-    st.session_state.clicked = True
-
-st.button('Proceed', on_click=click_button)
-
-if st.session_state.clicked:
-    st.write(second_md)
+st.write(second_md)

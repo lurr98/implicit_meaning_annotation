@@ -50,8 +50,9 @@ The omitted information is a logical premise or consequence given some mutual kn
 
 ---
 
-#### **3. Omitted Complements**
-A reader would normally expect the omitted information to occur with the verb due to its properties. For instance, it is typical to mention the reason for surprise, however, it is possible to omit it, as the next example shows.
+#### **3. Expected Information**
+
+The type of information (e.g. a reason, consequence, location) that was omitted is usually expected by the reader for the specific verb. For instance, it is typical to mention the reason for surprise, however, it is possible to omit it, as the next example shows.
 
 **Example:**  
 *How_To_Pack_for_a_Day_Trip.txt*  
