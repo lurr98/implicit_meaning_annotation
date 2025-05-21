@@ -45,10 +45,11 @@ The omitted information is recoverable from the context (including the article t
 
 **Example:**  
 *How_To_Care_for_an_Uglydoll.txt*  
-- When you buy it, it has a tag with its name and its personality.  
+* When you buy it, it has a tag with its name and its personality.  
   **Look at the tag :blue-background[of the doll].**  
   Now you know what it likes so far.
-- When you buy it, it has a tag with its name and its personality.  
+
+* When you buy it, it has a tag with its name and its personality.  
   **Look at the tag.**  
   Now you know what it likes so far.
 
@@ -59,9 +60,10 @@ The omitted information is a logical premise or consequence given some mutual kn
 
 **Example:**  
 *How_To_Shorten_a_Bike_Chain.txt*  
-- **Purchase a universal chain tool :blue-background[if you don’t have one].**  
+* **Purchase a universal chain tool :blue-background[if you don’t have one].**  
   This tool pushes the pins out of your chain to allow link removal.
-- **Purchase a universal chain tool.**  
+
+* **Purchase a universal chain tool.**  
   This tool pushes the pins out of your chain to allow link removal.
 
 ---
@@ -72,9 +74,10 @@ The type of information (e.g. a reason, consequence, location) that was omitted 
 
 **Example:**  
 *How_To_Pack_for_a_Day_Trip.txt*  
-- If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible.  
+* If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible.  
   **Bring more than you expect to eat, you'll be surprised :blue-background[how hungry you may get].**
-- If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible.  
+
+* If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible.  
   **Bring more than you expect to eat, you might be surprised.**
 
 ---
@@ -84,10 +87,11 @@ The instruction remains interpretable even when the information is omitted such 
 
 **Example:**  
 *How_To_Do_Leg_Exercises.txt*  
-- This move will target your glutes and upper thighs.  
+* This move will target your glutes and upper thighs.  
   **There are variations of the hip bridge such as raising one leg :blue-background[while in the bridge position].**  
   Lie down on your back with your knees bent and facing upward.
-- This move will target your glutes and upper thighs.  **There are variations of the hip bridge such as raising one leg.** 
+
+* This move will target your glutes and upper thighs.  **There are variations of the hip bridge such as raising one leg.** 
   Lie down on your back with your knees bent and facing upward.
 
 ---
@@ -110,9 +114,10 @@ The omission fundamentally changes the meaning of the original sentence.
 
 **Example:**  
 *How_To_Calculate_Z_Scores.txt*  
-- **:blue-background[Subtract each sample from] the sample mean.**  
+* **:blue-background[Subtract each sample from] the sample mean.**  
   Add together the values of all of the samples.
-- **Find the sample mean.**  
+
+* **Find the sample mean.**  
   Add together the values of all of the samples.
 
 ---
@@ -124,7 +129,7 @@ The omitted information introduces specific entities, concepts or events that a 
 *How_To_Put_Game_Saves_on_Your_PSP.txt*  
 * Put the game in that you got the save data from and see if it works.  
   **Don't forget to remove the cable :blue-background[by Kenneth Arthur].**
-  
+
 * Put the game in that you got the save data from and see if it works. 
   **Don't forget to remove the cable.**
 
