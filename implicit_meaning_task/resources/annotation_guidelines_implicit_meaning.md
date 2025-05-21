@@ -9,7 +9,9 @@ Below the texts you will find two buttons (:grey-background[Yes] and :grey-backg
 If you check the :grey-background[Yes] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
 
 ---
+:grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
 
+\
 Read the following text and focus on the **bold sentence**. 
  
 
