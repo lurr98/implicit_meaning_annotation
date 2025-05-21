@@ -9,7 +9,7 @@ first_md, second_md = split_md[0], split_md[1]
 st.write(first_md)
 st.write("")
 st.write("")
-st.markdown(":grey-background[Does the first sentence implicitly convey the same meaning as the second one?]")
+st.markdown(":grey-background[Does the second sentence implicitly convey the same meaning as the first one?]")
 
 implicit = st.segmented_control("", ["Yes", "No"])
 
