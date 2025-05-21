@@ -11,7 +11,6 @@ If you check the :grey-background[Yes] button, five more checkboxes and a differ
 ---
 :grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
 
-\
 Read the following text and focus on the **bold sentence**. 
  
 
