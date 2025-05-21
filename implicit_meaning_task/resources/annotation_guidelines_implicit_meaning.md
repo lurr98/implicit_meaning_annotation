@@ -122,9 +122,10 @@ The omitted information introduces specific entities, concepts or events that a 
 
 **Example:**  
 *How_To_Put_Game_Saves_on_Your_PSP.txt*  
-- Put the game in that you got the save data from and see if it works.  
+* Put the game in that you got the save data from and see if it works.  
   **Don't forget to remove the cable :blue-background[by Kenneth Arthur].**
-- Put the game in that you got the save data from and see if it works. 
+  
+* Put the game in that you got the save data from and see if it works. 
   **Don't forget to remove the cable.**
 
 ---
