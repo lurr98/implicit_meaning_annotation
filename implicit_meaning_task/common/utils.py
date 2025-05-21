@@ -48,11 +48,11 @@ def format_sample(question: dict) -> None:
     st.markdown(f":grey-background[*Article name:*] &emsp;{question["article_name"]}")
     st.markdown("")
     st.markdown(":grey-background[Read the following text and focus on the **bold sentence**.]")
-    st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{blue_background}**  \n> {remove_punctuation(question["context_after"])}")
+    st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{question["sentence_1"]}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
     st.markdown("")
     st.markdown(":grey-background[Now read the modified text which omits the highlighted part:]")
-    st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{question["sentence_1"]}**  \n> {remove_punctuation(question["context_after"])}")
+    st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{blue_background}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
     st.markdown(":grey-background[Do you understand both of the texts in the same way?]")
 
