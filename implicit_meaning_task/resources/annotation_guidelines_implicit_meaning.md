@@ -13,15 +13,23 @@ If you check the :grey-background[Yes] button, five more checkboxes and a differ
 ---
 
 Read the following text and focus on the **bold sentence**.
+<pre>
 
+</pre>
 :grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
 
 > This is how the annotation task will look like. **Check the box below :blue-background[by clicking on it].** When you have ticked the box, five more checkboxes and a comment section will appear.
+<pre>
 
+
+</pre>
 :grey-background[Now read the modified text which omits the highlighted part:]
 
 > This is how the annotation task will look like. **Check the box below.** When you have ticked the box, five more checkboxes and a comment section will appear.  
+<pre>
 
+
+</pre>
 :grey-background[Can you understand both sentences in the same way?]
 
 ==SPLIT==
