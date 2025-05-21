@@ -5,7 +5,7 @@ from core.scripts.utils import display_progress, load_annotation, TASK_INFO
 def remove_punctuation(text: str) -> str:
 
     text = " ".join(text.split("\n"))
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~](\d.)", "", text)
+    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
 
 
 def format_sample(question: dict) -> None:
