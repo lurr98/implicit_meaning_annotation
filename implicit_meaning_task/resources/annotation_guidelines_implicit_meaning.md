@@ -15,16 +15,20 @@ If you check the :grey-background[Yes] button, five more checkboxes and a differ
 Read the following text and focus on the **bold sentence**. 
  
 
-> This is how the annotation task will look like. **Check the box below :blue-background[by clicking on it].** When you have ticked the box, five more checkboxes and a comment section will appear. 
+> This is how the annotation task will look like. 
+> **Check the box below :blue-background[by clicking on it].** 
+> When you have ticked the box, five more checkboxes and a comment section will appear. 
  
 \
 :grey-background[Now read the modified text which omits the highlighted part:] 
  
 
-> This is how the annotation task will look like. **Check the box below.** When you have ticked the box, five more checkboxes and a comment section will appear.  
+> This is how the annotation task will look like. 
+> **Check the box below.** 
+> When you have ticked the box, five more checkboxes and a comment section will appear.  
  
 \
-:grey-background[Can you understand both of the texts in the same way?]
+:grey-background[Do you understand both of the texts in the same way?]
 
 ==SPLIT==
 
@@ -41,8 +45,8 @@ The omitted information is recoverable from the context (including the article t
 
 **Example:**  
 *How_To_Care_for_an_Uglydoll.txt*  
-- **Sentence 1:** Look at the tag :blue-background[of the doll].
-- **Sentence 2:** Look at the tag.  
+- When you buy it, it has a tag with its name and its personality. **Look at the tag :blue-background[of the doll].** Now you know what it likes so far.
+- When you buy it, it has a tag with its name and its personality. **Look at the tag.** Now you know what it likes so far.
 
 ---
 
@@ -51,8 +55,8 @@ The omitted information is a logical premise or consequence given some mutual kn
 
 **Example:**  
 *How_To_Shorten_a_Bike_Chain.txt*  
-- **Sentence 1:** Purchase a universal chain tool :blue-background[if you don’t have one].
-- **Sentence 2:** Purchase a universal chain tool.  
+- **Purchase a universal chain tool :blue-background[if you don’t have one].** This tool pushes the pins out of your chain to allow link removal.
+- **Purchase a universal chain tool.** This tool pushes the pins out of your chain to allow link removal.
 
 ---
 
@@ -62,8 +66,8 @@ The type of information (e.g. a reason, consequence, location) that was omitted 
 
 **Example:**  
 *How_To_Pack_for_a_Day_Trip.txt*  
-- **Sentence 1:** Bring more than you expect to eat, you'll be surprised :blue-background[how hungry you may get].
-- **Sentence 2:** Bring more than you expect to eat, you might be surprised.  
+- If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible. **Bring more than you expect to eat, you'll be surprised :blue-background[how hungry you may get].**
+- If it's cold, or in high altitude, bring a thermos with some soup. One of the best warm, light, and portable meals possible. **Bring more than you expect to eat, you might be surprised.**
 
 ---
 
@@ -72,15 +76,15 @@ The instruction remains interpretable even when the information is omitted such 
 
 **Example:**  
 *How_To_Do_Leg_Exercises.txt*  
-- **Sentence 1:** There are variations of the hip bridge such as raising one leg :blue-background[while in the bridge position].
-- **Sentence 2:** There are variations of the hip bridge such as raising one leg.  
+- This move will target your glutes and upper thighs. **There are variations of the hip bridge such as raising one leg :blue-background[while in the bridge position].** Lie down on your back with your knees bent and facing upward.
+- This move will target your glutes and upper thighs. **There are variations of the hip bridge such as raising one leg.** Lie down on your back with your knees bent and facing upward.
 
 ---
 
 **Note:**  
 A sentence pair may match multiple categories.  
 
-[comment]: # (For example, the third sentence could also fall under **Context**, since what one might be surprised about is evident from the immediate context.)
+[comment]: # (For example, the third example could also fall under **Context**, since what one might be surprised about is evident from the immediate context.)
 
 If you think the added information is implicit meaning but **none of the positive criteria** apply, please tick the **Other** checkbox and explain your reasoning in the comment section next to it.
 
@@ -95,8 +99,8 @@ The omission fundamentally changes the meaning of the original sentence.
 
 **Example:**  
 *How_To_Calculate_Z_Scores.txt*  
-- **Sentence 1:** :blue-background[Subtract each sample from] the sample mean.
-- **Sentence 2:** Find the sample mean.  
+- **:blue-background[Subtract each sample from] the sample mean.** Add together the values of all of the samples.
+- **Find the sample mean.** Add together the values of all of the samples.
 
 ---
 
@@ -105,8 +109,8 @@ The omitted information introduces specific entities, concepts or events that a 
 
 **Example:**  
 *How_To_Put_Game_Saves_on_Your_PSP.txt*  
-- **Sentence 1:** Don't forget to remove the cable :blue-background[by Kenneth Arthur].
-- **Sentence 2:** Don't forget to remove the cable.  
+- Put the game in that you got the save data from and see if it works. **Don't forget to remove the cable :blue-background[by Kenneth Arthur].**
+- Put the game in that you got the save data from and see if it works. **Don't forget to remove the cable.**
 
 ---
 
