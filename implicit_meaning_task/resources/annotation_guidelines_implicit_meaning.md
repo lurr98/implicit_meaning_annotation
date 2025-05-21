@@ -24,7 +24,7 @@ If you check the :grey-background[Yes] button, five more checkboxes and a differ
 
 ---
 
-During the annotation task, select "Yes" if you think that the two sentences convey the same meaning, even though the second one does not state all information explicitly. If you do this, please specify the reason for your decision by ticking the relevant checkboxes among the ones that will appear. You can choose from the following categories:
+During the annotation task, select "Yes" if you think that the two sentences convey the same meaning in the given context, even though the second one does not state all information explicitly. If you do this, please specify the reason for your decision by ticking the relevant checkboxes among the ones that will appear. You can choose from the following categories:
 
 ---
 

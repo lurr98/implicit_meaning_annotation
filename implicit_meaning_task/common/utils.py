@@ -68,7 +68,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     # # display the "Sample 1/5" thing
     display_progress(key=subtask)
 
-    st.markdown("Read the following sentences and the contexts.\n")
+    st.markdown("Read the following sentences, the article name and the contexts.\n")
     format_sample(question)
 
     # load values previously filled in checkboxes or None if this is first time annotating this sample
@@ -96,7 +96,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     #     horizontal=True,
     #     index=None,)
 
-    st.markdown(":grey-background[Does the second sentence implicitly convey the same meaning as the first one?]")
+    st.markdown(":grey-background[Does the second sentence implicitly convey the same meaning as the first one *within the given context*?]")
 
     implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
     # col1, col2 = st.columns(2)
