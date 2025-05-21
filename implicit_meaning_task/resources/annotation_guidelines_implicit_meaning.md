@@ -11,17 +11,17 @@ Below you will find two buttons (:grey-background[Yes] and :grey-background[No])
 If you check the :grey-background[Yes] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
 
 ---
+:grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
 
 Read the following text and focus on the **bold sentence**.
 
 \
-:grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
-
 > This is how the annotation task will look like. **Check the box below :blue-background[by clicking on it].** When you have ticked the box, five more checkboxes and a comment section will appear.
 
 \
 :grey-background[Now read the modified text which omits the highlighted part:]
 
+\
 > This is how the annotation task will look like. **Check the box below.** When you have ticked the box, five more checkboxes and a comment section will appear.  
 
 \
