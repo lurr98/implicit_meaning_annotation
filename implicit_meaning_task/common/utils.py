@@ -5,7 +5,7 @@ from core.scripts.utils import display_progress, load_annotation, TASK_INFO
 def remove_punctuation(text: str) -> str:
 
     text = " ".join(text.split("\n"))
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
+    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~](\d.)", "", text)
 
 
 def format_sample(question: dict) -> None:
@@ -107,7 +107,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     #     key="implicit",
     #     horizontal=True,
     #     index=None,)
-    
+
     implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
     # col1, col2 = st.columns(2)
     # with col1:
