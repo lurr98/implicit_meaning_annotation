@@ -58,7 +58,7 @@ def format_sample(question: dict) -> None:
     st.markdown(":grey-background[Now read the modified text which omits the highlighted part:]")
     st.markdown("")
     st.markdown("")
-    st.markdown(f"> {remove_punctuation(question["context_before"])}\n> **{question["sentence_1"]}**\n> {remove_punctuation(question["context_after"])}")
+    st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{question["sentence_1"]}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
     st.markdown("")
     st.markdown(":grey-background[Do you understand both of the texts in the same way?]")
