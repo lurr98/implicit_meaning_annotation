@@ -2,16 +2,13 @@
 
 The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the second sentence, both sentences convey **the same meaning** within the surrounding context.
 
-For every item you will be shown two almost equivalent sentences, S1 and S2. However, the first sentence contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence.
+For every item you will first be shown the name of the article from which the following sentences were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the first text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence.
 
-The sentences were taken from two versions of the same wikiHow article, so you will also be shown the preceding and succeeding context as well as the name of the corresponding wikiHow article.
-
-Below you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
+Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
 
 If you check the :grey-background[Yes] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
 
 ---
-:grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
 
 Read the following text and focus on the **bold sentence**. 
  
@@ -25,7 +22,7 @@ Read the following text and focus on the **bold sentence**.
 > This is how the annotation task will look like. **Check the box below.** When you have ticked the box, five more checkboxes and a comment section will appear.  
  
 \
-:grey-background[Can you understand both sentences in the same way?]
+:grey-background[Can you understand both of the texts in the same way?]
 
 ==SPLIT==
 
