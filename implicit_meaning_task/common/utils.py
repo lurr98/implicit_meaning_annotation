@@ -8,8 +8,8 @@ def remove_punctuation(text: str) -> str:
     # remove listed numbers
     subbed_text = re.sub(r"\d\.", "", text)
     # remove URLs
-    subbed_text = re.sub(r"http[s]?://\S+|www\.\S+", "URL", subbed_text)
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", subbed_text)
+    sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+", "URL", subbed_text)
+    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_subbed_text)
 
 
 def format_sample(question: dict) -> None:
