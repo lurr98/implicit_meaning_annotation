@@ -27,7 +27,7 @@ Read the following text and focus on the **bold sentence**.
 > When you have ticked the box, five more checkboxes and a comment section will appear. 
  
 \
-:grey-background[Do you understand both of the texts in the same way?]
+:grey-background[Does changing the bold sentence affect your understanding of the text?]
 
 ==SPLIT==
 

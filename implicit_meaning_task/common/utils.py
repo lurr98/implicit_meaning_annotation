@@ -57,7 +57,7 @@ def format_sample(question: dict) -> None:
     st.markdown(":grey-background[Now read the modified text:]")
     st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{blue_background}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
-    st.markdown(":grey-background[Do you understand both of the texts in the same way?]")
+    st.markdown(":grey-background[Does changing the bold sentence affect your understanding of the text?]")
 
     
 def check_all_checkboxes(implicit: str, checkboxes: list, comment: str) -> bool:
