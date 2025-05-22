@@ -8,7 +8,7 @@ def remove_punctuation(text: str) -> str:
     # remove listed numbers
     subbed_text = re.sub(r"\d\.", "", text)
     # remove URLs
-    sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+", "URL", subbed_text)
+    sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", subbed_text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_subbed_text)
 
 
