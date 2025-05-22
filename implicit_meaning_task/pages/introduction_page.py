@@ -17,7 +17,7 @@ if implicit == "Yes":
     with col1:
         context = st.checkbox(label="Context")
         reasoning = st.checkbox(label="Logical Reasoning")
-        complement = st.checkbox(label="Omitted Complement")
+        complement = st.checkbox(label="Expected Information")
         instruction = st.checkbox(label="Recoverable Instruction")
 
     with col2:

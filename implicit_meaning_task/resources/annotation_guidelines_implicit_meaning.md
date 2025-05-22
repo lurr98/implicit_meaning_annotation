@@ -2,7 +2,7 @@
 
 The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, both sentences convey **the same meaning** within the surrounding context.
 
-For every item you will first be shown the name of the article from which the following sentences were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence.
+The data that will be presented to you is from a dataset based on wikiHow article. For every item you will first be shown the name of the article from which the following sentences were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
 
 Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
 
@@ -19,7 +19,7 @@ Read the following text and focus on the **bold sentence**.
 > When you have ticked the box, five more checkboxes and a comment section will appear.  
  
 \
-:grey-background[Now read the modified text which omits the highlighted part:] 
+:grey-background[Now read the modified text:] 
  
 
 > This is how the annotation task will look like.  
@@ -126,7 +126,7 @@ The added information introduces specific entities, concepts or events that a re
 
 **Example:**  
 *How_To_Put_Game_Saves_on_Your_PSP.txt*  
-* Put the game in that you got the save data from and see if it works. 
+* Put the game in that you got the save data from and see if it works.  
   **Don't forget to remove the cable.**
 
 * Put the game in that you got the save data from and see if it works.  
@@ -135,3 +135,5 @@ The added information introduces specific entities, concepts or events that a re
 ---
 
 If you are unsure about whether the omitted information is implicit meaning, select "No" and write a comment in the comment section below it.
+
+> Please note that, since the data is taken from a wiiHoe dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "No" and write a note in the comment section. 
