@@ -136,4 +136,4 @@ The added information introduces specific entities, concepts or events that a re
 
 If you are unsure about whether the omitted information is implicit meaning, select "No" and write a comment in the comment section below it.
 
-> Please note that, since the data is taken from a wiiHoe dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "No" and write a note in the comment section. 
+> Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "No" and write a note in the comment section. 
