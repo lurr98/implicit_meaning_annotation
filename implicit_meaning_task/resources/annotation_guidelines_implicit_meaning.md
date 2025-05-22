@@ -1,12 +1,12 @@
 # Annotation Guidelines: Implicit Meaning
 
-The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, both sentences convey **the same meaning** within the surrounding context.
+The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, **the understanding of the text does not change**.
 
-The data that will be presented to you is from a dataset based on wikiHow article. For every item you will first be shown the name of the article from which the following sentences were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
+The data that will be presented to you is from a dataset based on wikiHow article. For every item you will first be shown the name of the article from which the texts were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
 
 Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
 
-If you check the :grey-background[Yes] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
+If you check the :grey-background[No] button, five more checkboxes and a different comment section will appear. You can check out this mini example here and play around with it:
 
 ---
 :grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
@@ -33,7 +33,7 @@ Read the following text and focus on the **bold sentence**.
 
 ---
 
-During the annotation task, select "Yes" if you think that the two sentences convey the same meaning in the given context, even though the first one does not state all information explicitly. If you do this, please specify the reason for your decision by ticking the relevant checkboxes among the ones that will appear. You can choose from the following categories:
+During the annotation task, select "No" if changing the bold sentence in the given context does not affect your understanding of the text, even though the first one does not state all information explicitly. If you do this, please specify the reason for your decision by ticking the relevant checkboxes among the ones that will appear. You can choose from the following categories:
 
 ---
 
@@ -106,7 +106,7 @@ If you think the added information is implicit meaning but **none of the positiv
 
 ### ❌ Negative Indicators — Not Implicit Meaning
 
-If any of the following apply, select "No". These suggest **new information** rather than implicit content:
+If any of the following apply, select "Yes". These suggest **new information** rather than implicit content:
 
 #### **1. Addition changes the core meaning**
 The addition fundamentally changes the meaning of the original sentence.
@@ -134,6 +134,6 @@ The added information introduces specific entities, concepts or events that a re
 
 ---
 
-If you are unsure about whether the omitted information is implicit meaning, select "No" and write a comment in the comment section below it.
+If you are unsure about whether the omitted information is implicit meaning, select "Yes" and write a comment in the comment section below it.
 
-> Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "No" and write a note in the comment section. 
+> Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 

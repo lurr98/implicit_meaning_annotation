@@ -9,7 +9,7 @@ first_md, second_md = split_md[0], split_md[1]
 st.write(first_md)
 implicit = st.segmented_control("", ["Yes", "No"])
 
-if implicit == "Yes":
+if implicit == "No":
     st.markdown("Please specify one or multiple reasons for your choice:")
 
     col1, col2 = st.columns(2)
@@ -26,7 +26,7 @@ if implicit == "Yes":
         if comment_implicit:
             st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 else:
-    comment_not_implicit = st.text_input(label="If you are unsure, select \"No\" and explain your thoughts here:")
+    comment_not_implicit = st.text_input(label="If you are unsure, select \"Yes\" and explain your thoughts here:")
     if comment_not_implicit:
         st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 

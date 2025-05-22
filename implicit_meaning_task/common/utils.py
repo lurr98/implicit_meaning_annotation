@@ -62,12 +62,12 @@ def format_sample(question: dict) -> None:
     
 def check_all_checkboxes(implicit: str, checkboxes: list, comment: str) -> bool:
 
-    if implicit == "No":
+    if implicit == "Yes":
         return True
-    elif implicit == "Yes" and checkboxes[-1]:
+    elif implicit == "No" and checkboxes[-1]:
         if comment:
             return True
-    elif implicit == "Yes" and len([box for box in checkboxes[:-1] if box]) >= 1:
+    elif implicit == "No" and len([box for box in checkboxes[:-1] if box]) >= 1:
         return True
     else:
         return False
@@ -118,7 +118,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     #     implicit = st.checkbox(key=10 * index + 1, label="Yes", value=None)
     # with col2:
     #     not_implicit = st.checkbox(key=10 * index + 2, label="No", value=None) 
-    if implicit == "Yes":
+    if implicit == "No":
         st.markdown("Please specify one or multiple reasons for your choice:")
 
         col1, col2 = st.columns(2)
@@ -135,7 +135,7 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
             if comment_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
     else:
-        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"No\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
+        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"Yes\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
         if comment_not_implicit:
             st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
