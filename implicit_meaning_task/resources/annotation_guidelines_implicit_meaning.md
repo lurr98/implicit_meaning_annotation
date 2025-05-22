@@ -2,7 +2,7 @@
 
 The goal of this annotation task is to find sentence pairs where one sentence contains **implicit meaning** that is made explicit in the other. More specifically, this means that, even though not everything is stated explicitly in the first sentence, **the understanding of the text does not change** when the information is added.
 
-The data that will be presented to you is from a dataset based on wikiHow article. For every item you will first be shown the name of the article from which the texts were taken. Below that you will find two almost equivalent texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
+The data that will be presented to you is from a dataset based on wikiHow articles. For every item you will first be shown the name of the article from which the texts were taken. Below that you will find two almost identical texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
 
 Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
 
@@ -37,7 +37,7 @@ During the annotation task, select "No" if changing the bold sentence in the giv
 
 ---
 
-### ✔️ Positive Indicators – Implicit Meaning
+### Indicators for Implicit Meaning
 
 #### **1. Context**
 The added information is recoverable from the context (including the article title). In the following example, the reference “doll” can be inferred from the title of the article.
@@ -100,11 +100,11 @@ A sentence pair may match multiple categories.
 
 [comment]: # (For example, the third example could also fall under **Context**, since what one might be surprised about is evident from the immediate context.)
 
-If you think the added information is implicit meaning but **none of the positive criteria** apply, please tick the **Other** checkbox and explain your reasoning in the comment section next to it.
+If you think the added information is implicit meaning but **none of the criteria above** apply, please tick the **Other** checkbox and explain your reasoning in the comment section next to it.
 
 ---
 
-### ❌ Negative Indicators — Not Implicit Meaning
+### Indicators for New Information
 
 If any of the following apply, select "Yes". These suggest **new information** rather than implicit content:
 
@@ -134,6 +134,6 @@ The added information introduces specific entities, concepts or events that a re
 
 ---
 
-If you are unsure about whether the omitted information is implicit meaning, select "Yes" and write a comment in the comment section below it.
+If you are unsure about whether the added information is implicit meaning, select "Yes" and write a comment in the comment section below it.
 
 > Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 
