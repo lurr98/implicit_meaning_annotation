@@ -24,11 +24,11 @@
         "correct_answer": "Yes"
     },
     "4": {
-        "sentence_1": "Make sure your wireless network is encrypted with WPA2.",
-        "sentence_2": "Make sure your wireless network is encrypted with WPA2 <and that you use a strong password>.",
-        "article_name": "Prevent_People_from_Tracking_You_on_the_Internet.txt",
-        "context_before": "Your home network is one of the most common entry points for tracking and unauthorized data collection. It's essential to secure your router settings to reduce these risks.",
-        "context_after": "This step helps protect your data from being intercepted by others on the same network and makes it harder for third parties to monitor your online activity.",
+        "sentence_1": "You may have all of these things, but still feel deprived, because you're missing that iPod, latest cell phone, mansion...",
+        "sentence_2": "You may have all of these things, but still feel deprived, because you're <comparing yourself to others and feel that you are> missing that iPod, latest cell phone, mansion...",
+        "article_name": "Become_Content_With_What_You_Have.txt",
+        "context_before": "Be thankful for the basics. Food, shelter, family, friends, a job are all that's truly needed.",
+        "context_after": "Look at what you do have. Realize there are many people who lack basic needs.",
         "correct_answer": "Yes"
     },
     "5": {
