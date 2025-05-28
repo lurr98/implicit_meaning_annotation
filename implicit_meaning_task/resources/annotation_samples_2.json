@@ -296,11 +296,11 @@
         "grouping": 0
     },
     "38": {
-        "sentence_1": "Depending on the size of your lawn, you may want to use either a push spreader or a hand spreader.",
-        "sentence_2": "Depending on the size of your lawn, you may want to use either a push spreader or a hand spreader <to spread the rye seed>.",
-        "article_name": "Plant_Rye_Grass.txt",
-        "context_before": "3. Plant the rye grass. \n * Rye grass is easily planted using a spreader.",
-        "context_after": "Hand spreaders are typically used for small lawns that have large amounts of detail, while push spreaders may be best for larger lawns with greater amounts of open area.  4. Water the rye grass.     * You should water the rye grass the same day that it is planted.",
+        "sentence_1": "Will burn at almost any altitude, in most any weather.",
+        "sentence_2": "Will burn at almost any altitude, in most any weather <except very cold>.",
+        "article_name": "Choose_a_Backpacking_Stove.txt",
+        "context_before": "One of the most commonly recognized being the <a href=\"http%3A//www.jetboil.com/products/cookingsystems/personalcookingsystem\">JetBoil\u2122 stove systems</a>. These bad boys typically run on pressurized canisters of butane and burn hot and fast. Boils 2 cups in around 2-3 minutes.",
+        "context_after": "And they are a plug & play set-up for the most part. Hook up the canister, light the stove and away you go. <br><br> But you will pay the price in weight and literally with your wallet ( not just for the stove, but for the fuel as well).",
         "grouping": 1
     },
     "39": {
