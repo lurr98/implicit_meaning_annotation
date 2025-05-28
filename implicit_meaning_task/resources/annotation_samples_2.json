@@ -112,11 +112,11 @@
         "grouping": 1
     },
     "15": {
-        "sentence_1": "Use Star Trek lines.",
-        "sentence_2": "Use Star Trek lines <in everyday conversation>.",
-        "article_name": "Become_a_Star_Trek_Fan.txt",
-        "context_before": "## Steps\n \n   1. Watch Watch Watch. Watch all the episodes and the movies over and over again\n 2.",
-        "context_after": "anytime you can, use lines like,\"Beam me up Scotty!\" and \"Live long and prosper\"  3. Avoid Star wars fans. Star Wars fans might cause you to lose your interest in Star Trek, and start using Star Wars lines. Remember Star Wars and Star Trek, like oil and water, DO NOT MIX!",
+        "sentence_1": "Standing poses can help strengthen and stretch your legs.",
+        "sentence_2": "Standing poses can help strengthen and stretch your legs and <the inner muscles that stabilize your hips>.",
+        "article_name": "Complement_Cardio_with_Yoga.txt",
+        "context_before": "* Hold each asana for 3-5 breaths. \n 2. Add standing poses.",
+        "context_after": "They also help you balance and focus. Start with basic standing poses such as tree pose or the Warrior Series.",
         "grouping": 0
     },
     "16": {
