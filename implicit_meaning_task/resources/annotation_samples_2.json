@@ -464,11 +464,11 @@
         "grouping": 1
     },
     "59": {
-        "sentence_1": "If you are overweight or if you are not in good shape, then try to lose some weight and incorporate more exercise into your routine as well.",
-        "sentence_2": "If you are overweight or if you are not in good shape, then try to lose some weight <by changing your diet> and incorporate more exercise into your routine as well.",
-        "article_name": "Prevent_Hernia.txt",
-        "context_before": "### Making Lifestyle Changes\n \n 1. Get into good shape. Hernias are more common in people who are overweight or who are in poor shape.",
-        "context_after": "* Start by doing something low impact, such as walking or biking, and add intensity as you get stronger.     * Aim for 30 minutes of exercise per day five days per week. \n   2. Eat foods that are high in fiber. Constipation can cause a hernia as well, so it is important to <a href=\"http%3A//www.wikihow.com/Avoid-Constipation\">prevent constipation</a> to prevent a hernia.",
+        "sentence_1": "Start the car and find a nice long empty stretch of road.",
+        "sentence_2": "Start the car and find a nice long empty stretch of road <for trying this out>.",
+        "article_name": "Use_Autostick.txt",
+        "context_before": "## Steps\n \n   1. Get into your car and adjust mirrors, and seats. \n 2.",
+        "context_after": "3. Put the car into first gear (or the sport/autostick gear).   4. Stomp on the gas and reach desired RPM\n   5.",
         "grouping": 0
     },
     "60": {
