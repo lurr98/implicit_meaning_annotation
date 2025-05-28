@@ -29,7 +29,7 @@ else:
 
     back_button = st.button(label="Back", key = 10 * index + 9, help="Go back to the previous sample.")
 
-    question, implicit, checkboxes, comment_implicit, comment_not_implicit, next_input = utils.print_annotation_schema(samples, index, "annotation")
+    question, implicit, checkboxes, comment_implicit, comment_not_implicit, next_input = utils.print_annotation_schema(index, "annotation")
 
     annotation = {"sentence_1": question["sentence_1"], "sentence_2": question["sentence_2"], "implicit_meaning": implicit, "if_implicit": checkboxes, "comment_implicit": comment_implicit, "comment_not_implicit": comment_not_implicit}
 

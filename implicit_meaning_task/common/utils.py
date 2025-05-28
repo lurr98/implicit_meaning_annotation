@@ -1,6 +1,6 @@
 import re
 import streamlit as st
-from core.scripts.utils import display_progress, load_annotation, TASK_INFO
+from core.scripts.utils import display_progress, read_json_from_file, load_annotation, TASK_INFO
 
 def remove_punctuation(text: str) -> str:
 
@@ -56,7 +56,7 @@ def check_all_checkboxes(implicit: str, checkboxes: list, comment: str) -> bool:
         return False
 
 
-def print_annotation_schema(samples: dict, index: int, subtask: str="annotation") -> tuple[dict, str, list, str, str, bool]:
+def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict, str, list, str, str, bool]:
     """
     Prints the annotation schema that is seen on the qualification and annotation page.
 
@@ -64,11 +64,10 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
     :param index: The number sample to show
     :return: The sentence and widget inputs in the order they are displayed to the user.
     """
-    question = samples[str(index)]
-    # # display the "Sample 1/5" thing
-    display_progress(key=subtask)
-
-    format_sample(question)
+    if subtask == "qualification":
+        samples = read_json_from_file(TASK_INFO["implicit_meaning_task"]["qualification_filepath"])
+    else:
+        samples = read_json_from_file(TASK_INFO["implicit_meaning_task"]["annotation_filepath"])
 
     # load values previously filled in checkboxes or None if this is first time annotating this sample
     sample_preload = load_annotation(subtask, index)
@@ -85,6 +84,11 @@ def print_annotation_schema(samples: dict, index: int, subtask: str="annotation"
                                                                                                 )
         comment_implicit_val, comment_not_implicit_val = (sample_preload["comment_implicit"], sample_preload["comment_not_implicit"])
 
+    question = samples[str(index)]
+    # # display the "Sample 1/5" thing
+    display_progress(key=subtask)
+
+    format_sample(question)
 
     context, reasoning, complement, instruction, other = False, False, False, False, False
     comment_implicit, comment_not_implicit = "", ""
