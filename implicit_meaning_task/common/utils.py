@@ -30,23 +30,6 @@ def format_sample(question: dict) -> None:
     # sentence 1 and 2 are switched bc we decided to put the revision first
     match = re.findall(r"<(.*)>", question["sentence_2"])
     blue_background = re.sub(r"<.*>", f":blue-background[{match[0]}]", question["sentence_2"])
-    # blue_background = re.sub(r"<.*>", f'<span style="background-color: #1e3a56;\
-    #         color: white;\
-    #         padding: 2px 2px;\
-    #         border-radius: 5px;">{match[0]}</span>', question["sentence_2"])
-    # formatted_string = f"**S1:** {question["sentence_1"]}\n##### **S2:** {blue_background}\n\n:grey-background[*Article name:*] &emsp;{question["article_name"]}\n\n:grey-background[*Context before:*] &nbsp;{question["context_before"]}\n\n:grey-background[*Context after:*] &emsp;{question["context_after"]}"
-    # return formatted_string
-
-    # labeled_paragraph("S1:", "&nbsp;" + blue_background, font_size="20px", font_weight="bold")
-    # st.markdown("<div style='height: 1.2em;'></div>", unsafe_allow_html=True)  # vertical space
-    # labeled_paragraph("S2:", "&nbsp;" + question["sentence_1"], font_size="20px", font_weight="bold")
-    # st.markdown("<div style='height: 2em;'></div>", unsafe_allow_html=True)  # vertical space
-    # labeled_paragraph("Article Name:", "&emsp;&ensp;" + question["article_name"])
-    # st.markdown("<div style='height: 1.2em;'></div>", unsafe_allow_html=True)  # vertical space
-    # labeled_paragraph("Context Before:", "&ensp;" + remove_punctuation(question["context_before"]), indent="124")
-    # st.markdown("<div style='height: 1.2em;'></div>", unsafe_allow_html=True)  # vertical space
-    # labeled_paragraph("Context After:", "&emsp;&nbsp;" + remove_punctuation(question["context_after"]), indent="122")
-    # st.markdown("<div style='height: 3em;'></div>", unsafe_allow_html=True)  # vertical space
 
     st.markdown(f":grey-background[*Article name:*] &emsp;{question["article_name"]}")
     st.markdown("")
