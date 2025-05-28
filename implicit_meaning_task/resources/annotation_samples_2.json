@@ -272,11 +272,11 @@
         "grouping": 1
     },
     "35": {
-        "sentence_1": "Tap the blue up arrow.",
-        "sentence_2": "Tap the blue up arrow <to send the message>.",
-        "article_name": "Create_Animoji.txt",
-        "context_before": "Speak and make faces to record them to the Animoji. \n     * Tap Record again to stop recording. \n 6.",
-        "context_after": "This will send your recorded Animoji to your conversation.    * Tap the red trash can icon to delete the recording and start over.",
+        "sentence_1": "Collect an old glass jar from your kitchen cupboard.",
+        "sentence_2": "Collect an old glass jar <with a tight lid> from your kitchen cupboard.",
+        "article_name": "Make_Campfire_Starters.txt",
+        "context_before": "## Steps\n \n   1. Purchase a bag of cotton balls and a bottle of metholated spirits or denatured alcohol. \n 2.",
+        "context_after": "3. Fill the jar one-third full with spirits.   4. Place cotton balls into spirits to soak thouroughly.",
         "grouping": 0
     },
     "36": {
