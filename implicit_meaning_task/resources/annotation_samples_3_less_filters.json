@@ -32,11 +32,11 @@
         "grouping": 0
     },
     "5": {
-        "sentence_1": "You need to improve your physical ability as well as your ability to think strategically.",
-        "sentence_2": "You need to improve your physical ability as well as your ability to think strategically <in order to win>.",
-        "article_name": "Win_at_Badminton.txt",
-        "context_before": "## Section::::Related wikiHows. \n \n Badminton is a fun sport and a great form of exercise. Being a knockout badminton player requires serious practice and a strong mind.",
-        "context_after": "no context",
+        "sentence_1": "The game ends when there are 6 switches, or one team scores 20 points.",
+        "sentence_2": "The game ends when there are 6 switches or one team scores 20 points, <whichever is earlier>.",
+        "article_name": "Play_Wall_Bat.txt",
+        "context_before": "To switch for defense to offense you must get 3 outs. Then the offense becomes defense and the defense becomes offense. This is called a switch.",
+        "context_after": "7. These are the basics, but now you need to score and make special defensive plays. To score, the runner must get to the starting base, but to do so he must run all the way around to 1st base, 2nd, 3rd, 4th, and back to home. This puts 2 points on the board.",
         "grouping": 0
     },
     "6": {
