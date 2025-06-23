@@ -68,7 +68,7 @@ TASK_INFO = {
     "implicit_meaning_task": {
         "annotation_filepath": "implicit_meaning_task/resources/annotation_samples_3_less_filters.json",
         "qualification_filepath": "implicit_meaning_task/resources/qualification_samples.json",
-        "number_of_annotator_groups": 2,
+        "number_of_annotator_groups": 3,
         "group_assignment": "post-qualification"
     }
 }
