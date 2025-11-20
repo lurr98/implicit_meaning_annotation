@@ -1,0 +1,66 @@
+{
+    "1": {
+        "sentence_1": "If your teacher is humiliating you in front of the class and it's genuinely bad, speak up.",
+        "sentence_2": "If your teacher is humiliating you in front of the class and it's genuinely bad, speak up <to another teacher or an administrator or official>.",
+        "article_name": "Stand_Up_to_a_Teacher_That_Has_Humiliated_You.txt",
+        "context_before": "Nevertheless, make it clear that they should not take their anger out on a pupil and you will be taking further action. \n  * Crying in front of others does not make you weak, humans show emotion and there's nothing wrong about that.",
+        "context_after": "",
+        "grouping": 0
+    },
+    "2": {
+        "sentence_1": "Your arc will start on one side of the center point and end on the other side.",
+        "sentence_2": "<If done correctly>, your arc will start on one side of the center point and end on the other side.",
+        "article_name": "Make_a_Megaphone.txt",
+        "context_before": "3. Make a short arc. Make an arc with a five inch radius from the center point. This arc will form the narrow end of your megaphone.",
+        "context_after": "* You can use a five inch string stuck to the center point to make your arc. Put a pencil on the far end of the string and swoop it around the surface of your material.   4. Make a long arc. Your second arc should have a radius of twenty-nine inches.",
+        "grouping": 0
+    },
+    "3": {
+        "sentence_1": "It takes some mental effort.",
+        "sentence_2": "It takes some mental effort <to ignore an itch>.",
+        "article_name": "Ignore_an_Itch.txt",
+        "context_before": "If your sitting down on a chair with a back, casually move against the chair. Don't do it to many times though! \n 3.",
+        "context_after": "If your on a stage talking or something, really get into your part. Think about other things. Concentrate.  4. Think about how you will look scratching yourself to the audience.",
+        "grouping": 0
+    },
+    "4": {
+        "sentence_1": "It'll give them something to remind them of you.",
+        "sentence_2": "It'll give them something to remind them of you or <make them feel remembered when you get back>..",
+        "article_name": "Become_a_Relaxed_and_Unstressed_Friend.txt",
+        "context_before": "It will strengthen your friendship. Remember: They stood by you in every step of the way.\n 5. Get them special prezzies just before you go on holidays or breaks.",
+        "context_after": "6. When they get new friends, try not to feel jealous and try to make their new friends be comfortable around you. They'll probably be quite nervous when they first meet you; don't let first impressions fool you - it takes a while to get to know someone.   7.",
+        "grouping": 0
+    },
+    "5": {
+        "sentence_1": "Close your eyes, think happy thoughts, and blow.",
+        "sentence_2": "Close your eyes, think happy thoughts, and blow <into the instrument>.",
+        "article_name": "Make_a_Correct_Clarinet_Embouchure.txt",
+        "context_before": "Position the mouthpiece so it points down. If you point it forward, it won't create as great of a sound. \n 5.",
+        "context_after": "Start softly, so you can barely hear it, then start increasing the volume by blowing faster. If you've done it right, it should make a high-pitched sound. If not, try adjusting how much mouthpiece is in your mouth.  6.",
+        "grouping": 1
+    },
+    "6": {
+        "sentence_1": "You may either input the file manually or go to \"Browse\" at the bottom of the window.",
+        "sentence_2": "You may either input the file manually <by typing it out> or go to \"Browse\" at the bottom of the window.",
+        "article_name": "Delete_Undeletable_Files_in_Windows.txt",
+        "context_before": "2. Double-click on the file. If you are using FileASSASSIN, a window will appear that will ask you to select the file you wish to delete.",
+        "context_after": "The other applications may vary slightly in layout, but the process will be generally the same.  3. Delete the file. Once you have selected the file you want to delete, click on it and then select \"delete\" from the options that the appellation provides you.",
+        "grouping": 1
+    },
+    "7": {
+        "sentence_1": "Or, you can put sugar water in a jar and the ants will come to you.",
+        "sentence_2": "Alternatively, you can put sugar water in a jar, <leave it near the edge of a nest> and the ants will come to you.",
+        "article_name": "Build_an_Ant_Farm.txt",
+        "context_before": "If you are using red ants, they can bite. Be careful. Use gloves.",
+        "context_after": "4. Capture a queen ant. Queens have a much larger thorax than other ants, and are probably around alot of eggs. Your ants will die off without her!",
+        "grouping": 1
+    },
+    "8": {
+        "sentence_1": "Be careful when inviting to your wedding! Inviting a stranger might get you a report.",
+        "sentence_2": "Be careful when inviting to your wedding! Inviting a stranger might get you a report, <causing a ban>.",
+        "article_name": "Get_Married_on_Animal_Jam.txt",
+        "context_before": "## Warnings\n \n *",
+        "context_after": "* Be appropriate and make weddings kid friendly.",
+        "grouping": 1
+    }
+}
