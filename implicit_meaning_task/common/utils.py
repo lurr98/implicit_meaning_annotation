@@ -125,10 +125,6 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
             comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons for your decision:", value=comment_implicit_val, max_chars=200)
             if comment_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
-    st.write("")
-    comment_not_implicit = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_not_implicit_val, max_chars=200)
-    if comment_not_implicit:
-        st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
     checkboxes = [context, reasoning, background, other]
     
@@ -151,6 +147,12 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     horizontal=True,
     help="1 = Not at all, 5 = Very much"
     )
+
+    st.write("")
+    comment_not_implicit = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_not_implicit_val, max_chars=200)
+    if comment_not_implicit:
+        st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
+
 
     if check_all_checkboxes(implicit, checkboxes, comment_implicit, confidence):
         confidence = int(confidence)
