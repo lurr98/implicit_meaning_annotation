@@ -1,4 +1,4 @@
-import re
+import re, uuid
 import streamlit as st
 from core.scripts.utils import display_progress, read_json_from_file, load_annotation, TASK_INFO
 
@@ -138,9 +138,10 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     key=10 * index + 10
     # )
 
-    confidence = st.selectbox(
+    confidence = st.radio(
     "How confident are you about your annotation?",
     ["Select...", "Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
+    key=uuid.uuid4()
     )
 
 
