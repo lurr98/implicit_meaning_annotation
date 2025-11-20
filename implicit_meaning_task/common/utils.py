@@ -138,10 +138,11 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     key=10 * index + 10
     # )
 
-    confidence = st.radio(
+    confidence = st.selectbox(
     "How confident are you about your annotation?",
-    ["Not confident", "Slightly confident", "Moderately confident", "Confident", "Very confident"]
+    ["Select...", "Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
     )
+
 
     if check_all_checkboxes(implicit, checkboxes, comment_implicit):
         next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
