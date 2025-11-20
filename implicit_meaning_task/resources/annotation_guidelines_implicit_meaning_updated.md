@@ -49,7 +49,7 @@ During the annotation task, select "No" if you think that changing the bold sent
 #### **1. Context**
 The added information is recoverable from the context (including the article title). In the following example, the reference “doll” can be inferred from the title of the article.
 
-**Example:**  
+**Example:** 
 *How_To_Care_for_an_Uglydoll.txt*  
 * When you buy it, it has a tag with its name and its personality.  
   **Look at the tag.**  
