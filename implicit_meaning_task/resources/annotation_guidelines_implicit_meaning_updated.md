@@ -36,7 +36,7 @@ Read the following text and focus on the **bold sentence**.
  
 
 [//]: # ":grey-background[Does changing the bold sentence affect your understanding of the text?]"
-:grey-background[Does altering the bold sentence meaningfully change how most readers understand the text?]
+:grey-background[What would most readers say? Does altering the bold sentence meaningfully change how they understand the text?]
 
 ==SPLIT==
 
@@ -64,7 +64,7 @@ The added information is recoverable from the context (including the article tit
 ---
 
 #### **2. Logical Reasoning**
-The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader. In the following example, the author can expect the reader to know that you do not have to buy something if you already possess it.
+The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader. In the following example, the author can expect most readers to know that you do not have to buy something if you already possess it.
 
 **Example:**  
 *How_To_Shorten_a_Bike_Chain.txt*  
@@ -78,7 +78,7 @@ The added information is a logical premise or consequence given some mutual know
 
 #### **3. Background Knowledge**
 
-The information in the added text was already anticipated due to existing background knowledge. For instance, it is commonly known that teachers usually prepare assignments for their students. This category might sometimes correlate with *Context*.
+The information in the added text was already anticipated due to existing background knowledge. For instance, most readers would know that teachers usually prepare assignments for their students. This category might sometimes correlate with *Context*.
 
 **Example:**  
 *Do_an_Assignment_on_Google_Classroom.txt*  
@@ -117,7 +117,7 @@ The addition fundamentally changes the meaning of the original sentence.
 ---
 
 #### **2. Added information is too specific**
-The added information introduces specific entities, concepts or events that a regular reader cannot be expected to know about.
+The added information introduces specific entities, concepts or events that most readers cannot be expected to know about.
 
 **Example:**  
 *How_To_Put_Game_Saves_on_Your_PSP.txt*  
