@@ -136,7 +136,6 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     with col2:
         st.write("")
         st.write("")
-        st.write("")
         st.markdown("How confident are you about your annotation?")
         confidence = st.slider(
             label="1 = Not confident at all, 5 = Very confident",
