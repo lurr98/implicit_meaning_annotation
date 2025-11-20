@@ -40,7 +40,7 @@ def format_sample(question: dict) -> None:
     st.markdown(":grey-background[Now read the modified text:]")
     st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{blue_background}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
-    st.markdown(":grey-background[Does changing the bold sentence affect your understanding of the text?]")
+    st.markdown(":grey-background[Does altering the bold sentence meaningfully change how most readers understand the text?]")
 
     
 def check_all_checkboxes(implicit: str, checkboxes: list, comment: str, confidence: str) -> bool:
@@ -125,6 +125,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
             comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons for your decision:", value=comment_implicit_val, max_chars=200)
             if comment_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
+    st.write("")
     comment_not_implicit = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_not_implicit_val, max_chars=200)
     if comment_not_implicit:
         st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
@@ -140,7 +141,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     step=1,
     #     key=10 * index + 10
     # )
-
+    st.write("")
     confidence = st.radio(
     "How confident are you about your annotation?",
     ["1", "2", "3", "4", "5"],
