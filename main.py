@@ -6,6 +6,9 @@ from core.scripts import database_repository, utils
 if "user_id" not in st.session_state:
     st.session_state.user_id = ""
 
+if "verified" not in st.session_state:
+    st.session_state.verified = False
+
 if "page" not in st.session_state:
     st.session_state.page = "main"
 
