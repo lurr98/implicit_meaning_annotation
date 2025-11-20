@@ -127,13 +127,8 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
             st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
     checkboxes = [context, reasoning, complement, instruction, other]
-    if check_all_checkboxes(implicit, checkboxes, comment_implicit):
-        next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
-    else:
-        next_input = None
-    st.write("")
-    st.write("")
-    st.markdown("How confident are you about your annotatuikbnion?")
+    
+    st.markdown("How confident are you about your annotation?")
     confidence = st.slider(
         label="1 = Not at all, 5 = Very much",
         min_value=1,
@@ -142,5 +137,10 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
         step=1,
         key=10 * index + 10
     )
+
+    if check_all_checkboxes(implicit, checkboxes, comment_implicit):
+        next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
+    else:
+        next_input = None
 
     return question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence, next_input
