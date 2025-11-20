@@ -140,7 +140,8 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
 
     confidence = st.radio(
     "How confident are you about your annotation?",
-    ["Select...", "Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
+    ["Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
+    index=None,
     key=uuid.uuid4()
     )
 
