@@ -99,7 +99,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     horizontal=True,
     #     index=None,)
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([2, 1])
     with col1:
         implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
         # col1, col2 = st.columns(2)
