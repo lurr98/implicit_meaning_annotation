@@ -134,7 +134,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
         else:
             next_input = None
     with col2:
-        st.markdown("How confident are you about your annotation?")
+        st.markdown("\n\nHow confident are you about your annotation?")
         confidence = st.slider(
             label="1 = Not confident at all, 5 = Very confident",
             min_value=1,
