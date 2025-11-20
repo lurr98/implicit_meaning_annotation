@@ -34,10 +34,13 @@ Read the following text and focus on the **bold sentence**.
 > **Check the box below :blue-background[by clicking on it].**  
 > Don't forget to select your confidence score before you proceed!
  
+
 [//]: # ":grey-background[Does changing the bold sentence affect your understanding of the text?]"
 :grey-background[Does altering the bold sentence meaningfully change how most readers understand the text?]
 
 ==SPLIT==
+
+---
 
 During the annotation task, select "No" if you think that changing the bold sentence in the given context would not affect the understanding of the text for most readers, even though the first text does not state all information explicitly. If you do this, please specify the reason for your decision by ticking the relevant checkboxes among the ones that will appear. You can choose from the following categories:
 ---
