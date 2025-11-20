@@ -1,7 +1,7 @@
 
 import sys, random, string
 import streamlit as st
-from captcha.image import ImageCaptcha
+from captcha_image import ImageCaptcha
 
 # define the costant
 length_captcha = 4
