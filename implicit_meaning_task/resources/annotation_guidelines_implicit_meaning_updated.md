@@ -33,9 +33,10 @@ Read the following text and focus on the **bold sentence**.
 > This is how the annotation task will look like.  
 > **Check the box below :blue-background[by clicking on it].**  
 > Don't forget to select your confidence score before you proceed!
- 
+
 
 [//]: # ":grey-background[Does changing the bold sentence affect your understanding of the text?]"
+\
 :grey-background[What would most readers say?]
 
 :grey-background[Does altering the bold sentence meaningfully change how they understand the text?]
