@@ -68,14 +68,12 @@ else:
         # Welcome!
                     
         This is the annotation website for the Natural Language Understanding Lab at UTN Nuremberg.
-
-        ## Are you here for annotation?
-                      
         """)
-    st.markdown(st.session_state.user_id)
     
     if st.session_state.user_id != "admin" and not st.session_state.verified:
         st.markdown("""
+        ## Are you here for annotation?
+                    
         **You have successfully logged in as an annotator.**
                     
         Before proceeding, please verify that you are human:
@@ -84,7 +82,7 @@ else:
         captcha_control()
     elif st.session_state.user_id == "admin":
         st.markdown("""
-        **You have successfully logged in as an admin.**
+        ## You have successfully logged in as an admin.
         """)
     else:
         st.markdown("""
