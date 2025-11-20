@@ -142,7 +142,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     "How confident are you about your annotation?",
     ["Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
     index=None,
-    key=uuid.uuid4()
+    key=question["ID"]
     )
 
 
