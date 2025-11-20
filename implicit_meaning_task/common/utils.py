@@ -142,7 +142,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
             max_value=5,
             value=3,
             step=1,
-            key=10 * index + 9,
+            key=10 * index + 10,
             help="1 = Not confident at all, 5 = Very confident"
         )
 
