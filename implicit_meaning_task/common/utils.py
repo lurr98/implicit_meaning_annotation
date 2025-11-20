@@ -2,6 +2,8 @@ import re, uuid
 import streamlit as st
 from core.scripts.utils import display_progress, read_json_from_file, load_annotation, TASK_INFO
 
+confidence_map = {"Not at all confident": 1, "Not confident": 2, "Somewhat confident": 3, "Confident": 4, "Very confident": 5}
+
 def remove_punctuation(text: str) -> str:
 
     text = " ".join(text.split("\n"))
@@ -43,20 +45,23 @@ def format_sample(question: dict) -> None:
     st.markdown(":grey-background[Does changing the bold sentence affect your understanding of the text?]")
 
     
-def check_all_checkboxes(implicit: str, checkboxes: list, comment: str) -> bool:
+def check_all_checkboxes(implicit: str, checkboxes: list, comment: str, confidence: str) -> bool:
 
-    if implicit == "Yes":
-        return True
-    elif implicit == "No" and checkboxes[-1]:
-        if comment:
+    if confidence:
+        if implicit == "Yes":
             return True
-    elif implicit == "No" and len([box for box in checkboxes[:-1] if box]) >= 1:
-        return True
+        elif implicit == "No" and checkboxes[-1]:
+            if comment:
+                return True
+        elif implicit == "No" and len([box for box in checkboxes[:-1] if box]) >= 1:
+            return True
+        else:
+            return False
     else:
         return False
 
 
-def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict, str, list, str, str, bool]:
+def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict, str, list, str, str, int, bool]:
     """
     Prints the annotation schema that is seen on the qualification and annotation page.
 
@@ -140,14 +145,14 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
 
     confidence = st.radio(
     "How confident are you about your annotation?",
-    ["Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
+    ["Not at all confident", "Not confident", "Somewhat confident", "Confident", "Very confident"],
     index=None,
     key=question["ID"],
     horizontal=True
     )
+    confidence = confidence_map(confidence)
 
-
-    if check_all_checkboxes(implicit, checkboxes, comment_implicit):
+    if check_all_checkboxes(implicit, checkboxes, comment_implicit, confidence):
         next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
     else:
         next_input = None
