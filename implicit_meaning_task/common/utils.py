@@ -134,10 +134,9 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
         else:
             next_input = None
     with col2:
-        # add confidence score
-        st.markdown("### Confidence Score")
+        st.markdown("How confident are you about your annotation?\n\n1 = Not confident at all, 5 = Very confident")
         confidence = st.slider(
-            label="How confident are you about your annotation?\n\n1 = Not confident at all, 5 = Very confident",
+            label="Confidence Score",
             min_value=1,
             max_value=5,
             value=3,
