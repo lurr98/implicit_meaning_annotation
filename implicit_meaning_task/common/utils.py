@@ -129,15 +129,13 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     checkboxes = [context, reasoning, complement, instruction, other]
     
     st.markdown("How confident are you about your annotation?")
-    confidence = st.slider(
-        label="1 = Not at all, 5 = Very much",
-        min_value=1,
-        max_value=5,
-        value=3,
-        step=1,
-        key=10 * index + 10
-    )
+    one = st.checkbox(key=10 * index + 2, label="Not at all", value=context_val, help="The added information is recoverable from the context.")
+    two = st.checkbox(key=10 * index + 3, label="Not really", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
+    three = st.checkbox(key=10 * index + 4, label="Somewhat confident", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
+    four = st.checkbox(key=10 * index + 5, label="Quite confident", value=instruction_val, help="The same action could be performed from both instructions.")
+    five = st.checkbox(key=10 * index + 5, label="Very confident", value=instruction_val, help="The same action could be performed from both instructions.")
 
+    confidence = [i+1 for i, _ in enumerate([one, two, three, four, five]) if _][0]
     if check_all_checkboxes(implicit, checkboxes, comment_implicit):
         next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
     else:
