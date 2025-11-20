@@ -36,7 +36,8 @@ Read the following text and focus on the **bold sentence**.
  
 
 [//]: # ":grey-background[Does changing the bold sentence affect your understanding of the text?]"
-:grey-background[What would most readers say?\n\nDoes altering the bold sentence meaningfully change how they understand the text?]
+:grey-background[What would most readers say?]
+:grey-background[Does altering the bold sentence meaningfully change how they understand the text?]
 
 ==SPLIT==
 
