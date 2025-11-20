@@ -151,8 +151,9 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     )
 
     if check_all_checkboxes(implicit, checkboxes, comment_implicit, confidence):
+        confidence = int(confidence)
         next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
     else:
         next_input = None
 
-    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, int(confidence), next_input
+    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence, next_input
