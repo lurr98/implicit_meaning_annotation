@@ -12,7 +12,7 @@ height = 150
 def captcha_control():
     #control if the captcha is correct
     if not st.session_state.verified or st.session_state.verified == False:
-        st.title("Captcha Control on Streamlit🤗")
+        st.markdown("## Please complete the captcha below to verify that you are human:")
         
         # define the session state for control if the captcha is correct
         st.session_state.verified = False
