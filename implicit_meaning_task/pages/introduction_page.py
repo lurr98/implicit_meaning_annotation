@@ -21,7 +21,6 @@ if implicit == "No":
         comment_implicit = st.text_input(label="If applicable, specify other reasons for your decision:", max_chars=200)
         if comment_implicit:
             st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
-checkboxes = [context, reasoning, background, other]
 
 st.write("")
 st.write("")
