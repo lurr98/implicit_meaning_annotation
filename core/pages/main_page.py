@@ -1,5 +1,52 @@
 
+import sys, random, string
 import streamlit as st
+from captcha.image import ImageCaptcha
+
+# define the costant
+length_captcha = 4
+width = 200
+height = 150
+
+# define the function for the captcha control
+def captcha_control():
+    #control if the captcha is correct
+    if not st.session_state.verified or st.session_state.verified == False:
+        st.title("Captcha Control on Streamlit🤗")
+        
+        # define the session state for control if the captcha is correct
+        st.session_state.verified = False
+        col1, col2 = st.columns(2)
+        
+        # define the session state for the captcha text because it doesn't change during refreshes 
+        if 'captcha' not in st.session_state:
+                st.session_state.captcha = ''.join(random.choices(string.ascii_uppercase + string.digits, k=length_captcha))
+        print("the captcha is: ", st.session_state.captcha)
+        
+        #setup the captcha widget
+        image = ImageCaptcha(width=width, height=height)
+        data = image.generate(st.session_state.captcha)
+        col1.image(data)
+        capta2_text = col2.text_area('Enter captcha text', height=30)
+        
+        if st.button("Verify the code"):
+            print(capta2_text, st.session_state.captcha)
+            capta2_text = capta2_text.replace(" ", "")
+            # if the captcha is correct, the controllo session state is set to True
+            if st.session_state.captcha.lower() == capta2_text.lower().strip():
+                del st.session_state.captcha
+                col1.empty()
+                col2.empty()
+                st.session_state.verified = True
+            else:
+                # if the captcha is wrong, the controllo session state is set to False and the captcha is regenerated
+                st.error("🚨 The captcha is wrong, try again!")
+                del st.session_state.captcha
+                del st.session_state.verified
+        else:
+            #wait for the button click
+            st.stop()
+
 
 st.session_state.page = "main_page"
 
@@ -18,12 +65,22 @@ if not st.session_state.user_id:
 
 else:
     st.markdown("""
-    # Welcome!
-                
-    This is the annotation website for the Natural Language Understanding Lab at UTN Nuremberg.
+        # Welcome!
+                    
+        This is the annotation website for the Natural Language Understanding Lab at UTN Nuremberg.
 
-    ## Are you here for annotation?
-                
-    **You have successfully logged in as an annotator.**  
-    Please read the task's introduction page before starting the qualification test.
-    """)
+        ## Are you here for annotation?
+                    
+        **You have successfully logged in as an annotator.**  
+        """)
+    
+    if not st.session_state.verified:
+        st.markdown("""
+        Before proceeding, please verify that you are human:
+                         
+        """)
+        captcha_control()
+    else:
+        st.markdown("""
+        ## You're human!\n\n Please proceed to the instruction now. Select **Instructions** on the navigation bar.
+        """)

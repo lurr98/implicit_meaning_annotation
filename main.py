@@ -55,7 +55,10 @@ elif st.session_state.user_id:
         "Home": [main_page]
     }
     if utils.authenticate_id("implicit_meaning_task", st.session_state.user_id):
-        available_pages["Implicit Meaning Task"] = [implicit_meaning_start_page, implicit_meaning_qualification_page, implicit_meaning_annotation_page]
+        if st.session_state.verified:
+            available_pages["Implicit Meaning Task"] = [implicit_meaning_start_page, implicit_meaning_qualification_page, implicit_meaning_annotation_page]
+        else:
+            available_pages["Implicit Meaning Task"] = [implicit_meaning_start_page]
 
     available_pages["Other"] = [logout_page]
 
