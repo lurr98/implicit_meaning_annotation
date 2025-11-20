@@ -144,8 +144,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     ["1", "2", "3", "4", "5"],
     index=None,
     key=question["ID"],
-    horizontal=True,
-    help="1 = Not at all, 5 = Very much"
+    horizontal=True
     )
 
     st.write("")
