@@ -1,13 +1,10 @@
-[comment]: # Potential Changes:
+[//]: # "# Potential Changes:"
 
-[comment]: # - add confidence scores
-[comment]: # - change sub categories: Context, Background Knowledge, Reasoning
-[comment]: # - make comment field more general
-[comment]: # - move ungrammaticality statement more to the beginning
-[comment]: # - add test phase for qualification test?
-[comment]: # - reword task description to avoid negation?
-
-[comment]: # --------------------------------------------------------------------
+[//]: # "- add confidence scores"
+[//]: # "- change sub categories: Context, Background Knowledge, Reasoning"
+[//]: # "- make comment field more general"
+[//]: # "- move ungrammaticality statement more to the beginning"
+[//]: # "- reword task description to avoid negation?"
 
 # Annotation Guidelines: Implicit Meaning
 
@@ -17,9 +14,7 @@ The data that will be presented to you is from a dataset based on wikiHow articl
 
 > Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 
 
-Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section.
-
-When you check a button, a scale from 1 to 5 will appear where you can mark how confident you are in your decision. 1 means "Not confident at all" and 5 corresponds to "Absolutely sure". Additionally, if you check the :grey-background[No] button, four more checkboxes will appear. You can check out this mini example here and play around with it:
+Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section. If you check the :grey-background[No] button, four more checkboxes will appear. You will further find five more checkboxes where you have to select how confident you are in your selection before you can proceed. You can check out this mini example here and play around with it:
 
 ---
 :grey-background[*Article name:*] &emsp;How_To_Annotate_This_Task.txt
@@ -29,7 +24,7 @@ Read the following text and focus on the **bold sentence**.
 
 > This is how the annotation task will look like.  
 > **Check the box below.**  
-> When you have ticked the box a confidence scale will appear.  
+> Don't forget to select your confidence score before you proceed!  
  
 \
 :grey-background[Now read the modified text:] 
@@ -37,7 +32,7 @@ Read the following text and focus on the **bold sentence**.
 
 > This is how the annotation task will look like.  
 > **Check the box below :blue-background[by clicking on it].**  
-> When you have ticked the box, a confidence scale will appear. 
+> Don't forget to select your confidence score before you proceed!
  
 \
 :grey-background[Does changing the bold sentence affect your understanding of the text?]
@@ -133,6 +128,8 @@ The added information introduces specific entities, concepts or events that a re
 
 ---
 
-If you are unsure about whether the added information is implicit meaning, select "Yes" and write a comment in the comment section below it.
+Feel free to share any observations or thoughts in the comment field! This might help us understand your decision even better.
 
-[comment]: # > Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 
+Finally, please indicate your level of confidende at the bottom of the page. 1 means "Not confident at all" and 5 corresponds to "Absolutely sure".
+
+> Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 

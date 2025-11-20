@@ -75,15 +75,15 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     # load values previously filled in checkboxes or None if this is first time annotating this sample
     sample_preload = load_annotation(subtask, index)
     if sample_preload is None:
-        implicit_val, context_val, reasoning_val, complement_val, instruction_val, other_val = None, None, None, None, None, None
+        # implicit_val, context_val, reasoning_val, complement_val, instruction_val, other_val = None, None, None, None, None, None
+        implicit_val, context_val, reasoning_val, background_val, other_val = None, None, None, None, None
         comment_implicit_val, comment_not_implicit_val = "", ""
     else:
-        implicit_val, context_val, reasoning_val, complement_val, instruction_val, other_val = (sample_preload["implicit_meaning"], 
+        implicit_val, context_val, reasoning_val, background_val, other_val = (sample_preload["implicit_meaning"], 
                                                                                                 sample_preload["if_implicit"][0], 
                                                                                                 sample_preload["if_implicit"][1], 
                                                                                                 sample_preload["if_implicit"][2], 
-                                                                                                sample_preload["if_implicit"][3], 
-                                                                                                sample_preload["if_implicit"][4]
+                                                                                                sample_preload["if_implicit"][3]
                                                                                                 )
         comment_implicit_val, comment_not_implicit_val = (sample_preload["comment_implicit"], sample_preload["comment_not_implicit"])
 
@@ -93,7 +93,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
 
     format_sample(question)
 
-    context, reasoning, complement, instruction, other = False, False, False, False, False
+    context, reasoning, background, other = False, False, False, False
     comment_implicit, comment_not_implicit = "", ""
     # implicit = st.radio(
     #     ":grey-background[Does the first sentence implicitely convey the same meaning as the second one?]",
@@ -116,20 +116,20 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
         with col1:
             context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
             reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
-            background = st.checkbox(key=10 * index + 4, label="Background Knowledge", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
+            background = st.checkbox(key=10 * index + 4, label="Background Knowledge", value=background_val, help="The information in the added text was already anticipated due to existing background knowledge.")
+            #complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
             # instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")
 
         with col2:
             other = st.checkbox("Other", value=other_val)
-            comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val, max_chars=200)
+            comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons for your decision:", value=comment_implicit_val, max_chars=200)
             if comment_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
-    else:
-        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"Yes\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
-        if comment_not_implicit:
-            st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
+    comment_not_implicit = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_not_implicit_val, max_chars=200)
+    if comment_not_implicit:
+        st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
-    checkboxes = [context, reasoning, complement, instruction, other]
+    checkboxes = [context, reasoning, background, other]
     
     # st.markdown("How confident are you about your annotation?")
     # confidence = st.slider(
@@ -141,8 +141,6 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     key=10 * index + 10
     # )
 
-    st.write("")
-    st.write("")
     confidence = st.radio(
     "How confident are you about your annotation?",
     ["1", "2", "3", "4", "5"],

@@ -1,6 +1,6 @@
 import streamlit as st
 
-with open("implicit_meaning_task/resources/annotation_guidelines_implicit_meaning.md", "r") as md:
+with open("implicit_meaning_task/resources/annotation_guidelines_implicit_meaning_updated.md", "r") as md:
     markdown = md.read()
 
 split_md = markdown.split("==SPLIT==")
