@@ -108,15 +108,15 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     if implicit == "No":
         st.markdown("Please specify one or multiple reasons for your choice:")
 
-        col3, col4 = st.columns(2)
+        col1, col2 = st.columns(2)
 
-        with col3:
+        with col1:
             context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
             reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
             complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
             instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")
 
-        with col4:
+        with col2:
             other = st.checkbox("Other", value=other_val)
             comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val, max_chars=200)
             if comment_implicit:
@@ -142,7 +142,8 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     "How confident are you about your annotation?",
     ["Not confident", "Somewhat confident", "Neutral", "Confident", "Very confident"],
     index=None,
-    key=question["ID"]
+    key=question["ID"],
+    horizontal=True
     )
 
 
