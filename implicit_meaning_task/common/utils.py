@@ -99,37 +99,52 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     horizontal=True,
     #     index=None,)
 
-    implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
-    # col1, col2 = st.columns(2)
-    # with col1:
-    #     implicit = st.checkbox(key=10 * index + 1, label="Yes", value=None)
-    # with col2:
-    #     not_implicit = st.checkbox(key=10 * index + 2, label="No", value=None) 
-    if implicit == "No":
-        st.markdown("Please specify one or multiple reasons for your choice:")
+    col1, col2 = st.columns(2)
+    with col1:
+        implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
+        # col1, col2 = st.columns(2)
+        # with col1:
+        #     implicit = st.checkbox(key=10 * index + 1, label="Yes", value=None)
+        # with col2:
+        #     not_implicit = st.checkbox(key=10 * index + 2, label="No", value=None) 
+        if implicit == "No":
+            st.markdown("Please specify one or multiple reasons for your choice:")
 
-        col1, col2 = st.columns(2)
+            col1, col2 = st.columns(2)
 
-        with col1:
-            context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
-            reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
-            complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
-            instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")
+            with col1:
+                context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
+                reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
+                complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
+                instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")
 
-        with col2:
-            other = st.checkbox("Other", value=other_val)
-            comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val, max_chars=200)
-            if comment_implicit:
+            with col2:
+                other = st.checkbox("Other", value=other_val)
+                comment_implicit = st.text_input(key=10 * index + 6, label="If applicable, specify other reasons that led to your decision:", value=comment_implicit_val, max_chars=200)
+                if comment_implicit:
+                    st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
+        else:
+            comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"Yes\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
+            if comment_not_implicit:
                 st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
-    else:
-        comment_not_implicit = st.text_input(key=10 * index + 7, label="If you are unsure, select \"Yes\" and explain your thoughts here:", value=comment_not_implicit_val, max_chars=200)
-        if comment_not_implicit:
-            st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
-    checkboxes = [context, reasoning, complement, instruction, other]
-    if check_all_checkboxes(implicit, checkboxes, comment_implicit):
-        next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
-    else:
-        next_input = None
+        checkboxes = [context, reasoning, complement, instruction, other]
+        if check_all_checkboxes(implicit, checkboxes, comment_implicit):
+            next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
+        else:
+            next_input = None
+    with col2:
+        # add confidence score
+        st.markdown("### Confidence Score")
+        confidence = st.slider(
+            label="How confident are you about your annotation?",
+            min_value=1,
+            max_value=5,
+            value=3,
+            step=1,
+            key=10 * index + 9,
+            help="1 = Not confident at all, 5 = Very confident"
+        )
 
-    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, next_input
+
+    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence, next_input
