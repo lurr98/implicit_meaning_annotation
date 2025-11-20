@@ -2,8 +2,6 @@ import re, uuid
 import streamlit as st
 from core.scripts.utils import display_progress, read_json_from_file, load_annotation, TASK_INFO
 
-confidence_map = {"Not at all confident": 1, "Not confident": 2, "Somewhat confident": 3, "Confident": 4, "Very confident": 5}
-
 def remove_punctuation(text: str) -> str:
 
     text = " ".join(text.split("\n"))
@@ -145,16 +143,16 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
 
     confidence = st.radio(
     "How confident are you about your annotation?",
-    ["Not confident", "Somewhat confident", "Confident", "Very confident"],
+    ["1", "2", "3", "4", "5"],
     index=None,
     key=question["ID"],
-    horizontal=True
+    horizontal=True,
+    help="1 = Not at all, 5 = Very much"
     )
 
     if check_all_checkboxes(implicit, checkboxes, comment_implicit, confidence):
-        confidence = confidence_map[confidence]
         next_input = st.button(key = 10 * index + 8, label="Next", help="Save this annotation and advance to the next one.")
     else:
         next_input = None
 
-    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence, next_input
+    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, int(confidence), next_input
