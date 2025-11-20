@@ -40,6 +40,7 @@ def format_sample(question: dict) -> None:
     st.markdown(":grey-background[Now read the modified text:]")
     st.markdown(f"> {remove_punctuation(question["context_before"])}  \n> **{blue_background}**  \n> {remove_punctuation(question["context_after"])}")
     st.markdown("")
+    st.markdown("")
     st.markdown(":grey-background[What would most readers say?]")
     st.markdown(":grey-background[Does altering the bold sentence meaningfully change how they understand the text?]")
 
