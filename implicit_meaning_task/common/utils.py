@@ -99,7 +99,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     #     horizontal=True,
     #     index=None,)
 
-    col1, col2 = st.columns([2, 1])
+    col1, col2 = st.columns([2, 1   ])
     with col1:
         implicit = st.segmented_control("", ["Yes", "No"], key=10 * index + 1, default=implicit_val)
         # col1, col2 = st.columns(2)
@@ -138,7 +138,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
         st.write("")
         st.markdown("How confident are you about your annotation?")
         confidence = st.slider(
-            label="1 = Not confident at all, 5 = Very confident",
+            label="1 = Not at all, 5 = Very much",
             min_value=1,
             max_value=5,
             value=3,
