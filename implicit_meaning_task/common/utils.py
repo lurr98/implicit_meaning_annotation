@@ -4,11 +4,11 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 
 def remove_punctuation(text: str) -> str:
 
-    text = "\n ".join([el for el in text.split("\n") if el])
+    text = "\n".join([el for el in text.split("\n") if el])
+    subbed_text = re.sub(r"\s+(?=\d)", " ", text)
     # remove listed numbers before a line break
-    subbed_text = re.sub(r"\d\n", "", text)
+    sub_subbed_text = re.sub(r"\d\n", "", subbed_text)
 
-    sub_subbed_text = re.sub(r"\s+(?=\d)", "", subbed_text)
     # remove URLs
     sub_sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", sub_subbed_text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_sub_subbed_text)
