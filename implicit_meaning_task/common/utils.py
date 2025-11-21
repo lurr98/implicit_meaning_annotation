@@ -5,13 +5,14 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 def remove_punctuation(text: str) -> str:
 
     text = "\n".join([el for el in text.split("\n") if el])
-    subbed_text = re.sub(r"\s+(?=\d)", " ´", text)
+    text = re.sub(r"\s+(?=\d)", " ", text)
     # remove listed numbers before a line break
-    sub_subbed_text = re.sub(r"\d\n", "", subbed_text)
+    text = re.sub(r"\n+(?=\d)", "´", text)
+    text = re.sub(r"\d\n", "", text)
 
     # remove URLs
-    sub_sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", sub_subbed_text)
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_sub_subbed_text)
+    text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", text)
+    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
 
 
 def format_sample(question: dict) -> None:
