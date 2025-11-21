@@ -117,7 +117,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
 
         with col1:
             context = st.checkbox(key=10 * index + 2, label="Context", value=context_val, help="The added information is recoverable from the context.")
-            reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from the reader.")
+            reasoning = st.checkbox(key=10 * index + 3, label="Logical Reasoning", value=reasoning_val, help="The added information is a logical premise or consequence given some mutual knowledge that the author can expect from most readers.")
             background = st.checkbox(key=10 * index + 4, label="Background Knowledge", value=background_val, help="The information in the added text was already anticipated due to existing background knowledge.")
             #complement = st.checkbox(key=10 * index + 4, label="Expected Information", value=complement_val, help="The type of information that was added is usually expected by the reader for the specific verb.")
             # instruction = st.checkbox(key=10 * index + 5, label="Recoverable Instruction", value=instruction_val, help="The same action could be performed from both instructions.")

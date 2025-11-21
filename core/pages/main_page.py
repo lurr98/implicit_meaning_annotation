@@ -8,11 +8,20 @@ length_captcha = 4
 width = 200
 height = 150
 
+st.markdown("""
+<style>
+/* Hide the 'Press Ctrl+Enter to submit' helper text */
+.keyboard-instructions {
+    display: none !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # define the function for the captcha control
 def captcha_control():
     #control if the captcha is correct
     if not st.session_state.verified or st.session_state.verified == False:
-        st.markdown("## Please complete the captcha below to verify that you are human:")
+        st.markdown("## Before proceeding, please complete the captcha below to verify that you are human:")
         
         # define the session state for control if the captcha is correct
         st.session_state.verified = False
@@ -75,9 +84,7 @@ else:
         ## Are you here for annotation?
                     
         **You have successfully logged in as an annotator.**
-                    
-        Before proceeding, please verify that you are human:
-                         
+                        
         """)
         captcha_control()
     elif st.session_state.user_id == "admin":
