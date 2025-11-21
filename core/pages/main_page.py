@@ -29,8 +29,7 @@ def captcha_control():
         col1.image(data)
         capta2_text = col2.text_input('Enter captcha text')
         
-        # if st.button("Verify the code"):
-        if capta2_text:
+        if st.button("Verify the code") or capta2_text:
             print(capta2_text, st.session_state.captcha)
             capta2_text = capta2_text.replace(" ", "")
             # if the captcha is correct, the controllo session state is set to True
@@ -44,9 +43,9 @@ def captcha_control():
                 st.error("🚨 The captcha is wrong, try again!")
                 del st.session_state.captcha
                 del st.session_state.verified
-        # else:
-        #     #wait for the button click
-        #     st.stop()
+        else:
+            #wait for the button click
+            st.stop()
 
 
 st.session_state.page = "main_page"
