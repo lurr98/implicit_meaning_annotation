@@ -508,7 +508,7 @@
         "sentence_2": "Will burn at almost any altitude, in most any weather <except very cold>.",
         "article_name": "Choose_a_Backpacking_Stove.txt",
         "context_before": "One of the most commonly recognized being the <a href=\"http%3A//www.jetboil.com/products/cookingsystems/personalcookingsystem\">JetBoil\u2122 stove systems</a>. These bad boys typically run on pressurized canisters of butane and burn hot and fast. Boils 2 cups in around 2-3 minutes.",
-        "context_after": "And they are a plug & play set-up for the most part. Hook up the canister, light the stove and away you go. <br><br> But you will pay the price in weight and literally with your wallet ( not just for the stove, but for the fuel as well).",
+        "context_after": "And they are a plug & play set-up for the most part. Hook up the canister, light the stove and away you go.  But you will pay the price in weight and literally with your wallet ( not just for the stove, but for the fuel as well).",
         "grouping": 1,
         "ID": "ID0181"
     },
@@ -823,7 +823,7 @@
         "sentence_2": "This high-impact variation of a side plank modifies the stretch just enough to strengthen your entire core <in addition to your obliques and rectus abdominis>.",
         "article_name": "Do_Side_Planks_With_an_Exercise_Ball.txt",
         "context_before": "## Timestamp::::2011-12-12T21:47:41Z",
-        "context_after": "<br><br>   Target zone: Abdominal muscles<br><br> Intensity level: High<br><br>   \n Equipment: Exercise ball",
+        "context_after": "   Target zone: Abdominal muscles Intensity level: High   \n Equipment: Exercise ball",
         "grouping": 2,
         "ID": "ID0152"
     },
@@ -993,8 +993,8 @@
         "sentence_1": "It just means that people are cowards and they are hidden so it is easier to do",
         "sentence_2": "It just means that people are cowards and they are hidden so it is easier to <bully other people>.",
         "article_name": "Know_if_You're_Being_Bullied.txt",
-        "context_before": "If someone is having a party or a sleepover and they invite all your friends, but not you than that is a sign of bullying.<br><br>\n 3. Cyberbullying. If you are getting teased on the internet that is called cyberbullying.",
-        "context_after": "4. <br><br> This is cyberbullying.   5. Power difference.",
+        "context_before": "If someone is having a party or a sleepover and they invite all your friends, but not you than that is a sign of bullying.\n 3. Cyberbullying. If you are getting teased on the internet that is called cyberbullying.",
+        "context_after": "4.  This is cyberbullying.   5. Power difference.",
         "grouping": 2,
         "ID": "ID0332"
     },
