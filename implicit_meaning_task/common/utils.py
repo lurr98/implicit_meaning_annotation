@@ -6,7 +6,7 @@ def remove_punctuation(text: str) -> str:
 
     text = "\n".join([el for el in text.split("\n") if el.strip()])
     # remove listed numbers before a line break
-    subbed_text = re.sub(r"\d\n", "", text)
+    subbed_text = re.sub(r"(\d\n| \d)", "", text)
     # remove URLs
     sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", subbed_text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_subbed_text)
