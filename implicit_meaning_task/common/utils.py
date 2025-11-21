@@ -5,7 +5,7 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 def remove_punctuation(text: str) -> str:
 
     # remove whitespace at beginning of lines
-    text = re.sub(r"\n\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"[^\n]\s+", "", text, flags=re.MULTILINE)
     # remove timestamps
     text = re.sub(r"Timestamp.*Z", "", text)
     text = "\n".join([el for el in text.split("\n") if el])
