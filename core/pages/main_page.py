@@ -35,10 +35,10 @@ def captcha_control():
             capta2_text = capta2_text.replace(" ", "")
             # if the captcha is correct, the controllo session state is set to True
             if st.session_state.captcha.lower() == capta2_text.lower().strip():
+                st.session_state.verified = True
                 del st.session_state.captcha
                 col1.empty()
                 col2.empty()
-                st.session_state.verified = True
             else:
                 # if the captcha is wrong, the controllo session state is set to False and the captcha is regenerated
                 st.error("🚨 The captcha is wrong, try again!")
