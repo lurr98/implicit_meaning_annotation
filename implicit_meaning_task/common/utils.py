@@ -6,7 +6,7 @@ def remove_punctuation(text: str) -> str:
 
     text = "\n".join([el for el in text.split("\n") if el])
     # remove whitespace at beginning of lines
-    text = re.sub(r"\n\n\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\n\s\s+", "", text, flags=re.MULTILINE)
     # remove timestamps
     text = re.sub(r"Timestamp.*Z", "", text)
     text = re.sub(r"\s+(?=\d)", " ", text)
