@@ -10,7 +10,7 @@ def remove_punctuation(text: str) -> str:
     text = re.sub(r"Timestamp.*Z", "", text)
     text = re.sub(r"\s+(?=\d)", " ", text)
     # remove listed numbers before a line break
-    text = re.sub(r"^(?=\d)", "\\", text)
+    text = re.sub(r"^(?=\d)", "´", text)
     text = re.sub(r"\d+\.?\n*$", "", text)
     
     # remove whitespace at beginning of lines for letters
