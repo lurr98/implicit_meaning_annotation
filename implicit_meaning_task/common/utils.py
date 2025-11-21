@@ -6,10 +6,12 @@ def remove_punctuation(text: str) -> str:
 
     text = "\n".join([el for el in text.split("\n") if el.strip()])
     # remove listed numbers before a line break
-    subbed_text = re.sub(r"(\d\n| \d)", "", text)
+    subbed_text = re.sub(r"\d\n", "", text)
+
+    sub_subbed_text = re.sub(r"\s+(?=\d)", "", subbed_text)
     # remove URLs
-    sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", subbed_text)
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_subbed_text)
+    sub_sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", sub_subbed_text)
+    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_sub_subbed_text)
 
 
 def format_sample(question: dict) -> None:
