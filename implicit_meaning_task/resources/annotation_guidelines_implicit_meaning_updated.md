@@ -79,7 +79,7 @@ The added information is a logical premise or consequence of the given text. In 
 
 #### **3. Background Knowledge**
 
-The added information is a logical premise or consequence of the given text. In the following example, the fact that you do not have to buy something if you already possess it can be logically inferred by most readers.
+The information in the added text was already anticipated due to existing background knowledge. For instance, most readers would know that teachers usually prepare assignments for their students. This category might sometimes correlate with *Context*.
 
 **Example:**  
 *Do_an_Assignment_on_Google_Classroom.txt*  
