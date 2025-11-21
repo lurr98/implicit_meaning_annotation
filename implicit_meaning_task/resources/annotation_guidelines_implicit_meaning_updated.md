@@ -12,8 +12,6 @@ The goal of this annotation task is to find sentence pairs where one sentence co
 
 The data that will be presented to you is from a dataset based on wikiHow articles. For every item you will first be shown the name of the article from which the texts were taken. Below that you will find two almost identical texts where one sentence is highlighted in bold. The bold sentence in the second text contains an additional element, marked in :blue-background[blue]. Do not worry about other changes in the sentence. 
 
-> Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 
-
 Below the texts you will find two buttons (:grey-background[Yes] and :grey-background[No]) as well as a comment section. If you check the :grey-background[No] button, four more checkboxes will appear. You will further find five more checkboxes where you have to select how confident you are in your selection before you can proceed. You can check out this mini example here and play around with it:
 
 ---
