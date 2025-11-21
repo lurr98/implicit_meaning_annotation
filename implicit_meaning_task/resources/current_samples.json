@@ -1,13 +1,4 @@
 {
-    "0": {
-        "sentence_1": "Add a few drops of peppermint oil.",
-        "sentence_2": "Add a few drops of peppermint oil, <which is what menthol is derived from>.",
-        "article_name": "Make_a_Hot_Oil_Treatment_for_Hair.txt",
-        "context_before": "## Tips\n \n   * Adjust the amount of oil you need according to the length and thickness of your hair. This hot oil recipe is adequate for medium length hair. \n *",
-        "context_after": "Although there are no proven benefits of peppermint oil in hair, the smell and the tingling sensation on the scalp are pleasant and relaxing.",
-        "grouping": 0,
-        "ID": "ID0000"
-    },
     "1": {
         "sentence_1": "Look out for hidden animal ingredients such as meat broths, gelatin, casein or whey (cow's milk proteins), lactose, butter, cheese, etc.",
         "sentence_2": "<When purchasing products>, look out for hidden animal ingredients such as meat broths, gelatin, casein or whey (cow's milk proteins), lactose, butter, cheese, etc.",
@@ -1024,5 +1015,14 @@
         "context_after": "2. Go either left or right while making a cave. When you're far enough as you can go, dig up while placing ladders. When you reach land, make the apartment or your second home.",
         "grouping": 2,
         "ID": "ID0362"
+    },
+    "114": {
+        "sentence_1": "Add a few drops of peppermint oil.",
+        "sentence_2": "Add a few drops of peppermint oil, <which is what menthol is derived from>.",
+        "article_name": "Make_a_Hot_Oil_Treatment_for_Hair.txt",
+        "context_before": "## Tips\n \n   * Adjust the amount of oil you need according to the length and thickness of your hair. This hot oil recipe is adequate for medium length hair. \n *",
+        "context_after": "Although there are no proven benefits of peppermint oil in hair, the smell and the tingling sensation on the scalp are pleasant and relaxing.",
+        "grouping": 0,
+        "ID": "ID0000"
     }
 }
