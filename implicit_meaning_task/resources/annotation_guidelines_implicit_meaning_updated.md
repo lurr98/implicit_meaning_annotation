@@ -102,7 +102,7 @@ If you think the added information is implicit meaning but **none of the criteri
 
 ### Indicators for New Information
 
-If any of the following apply, select "Yes". These suggest **new information** rather than implicit content:
+If any of the following apply, select :grey-background[Yes]. These suggest **new information** rather than implicit content:
 
 #### **1. Addition changes the core meaning**
 The addition fundamentally changes the meaning of the original sentence.
@@ -132,6 +132,6 @@ The added information introduces specific entities, concepts or events that most
 
 Feel free to share any observations or thoughts in the comment field! This might help us understand your decision even better.
 
-Finally, please indicate your level of confidende at the bottom of the page. 1 means "Not confident at all" and 5 corresponds to "Absolutely sure".
+Finally, please indicate your level of confidende at the bottom of the page. 1 means :grey-background[Not confident at all] and 5 corresponds to :grey-background[Absolutely sure].
 
 > Please note that, since the data is taken from a wikiHow dataset, the text might sound ungrammatical or unnatural at times. Do not let this distract you from the task. When you feel like you cannot complete the task due to the ungrammaticality of the text, select "Yes" and write a note in the comment section. 
