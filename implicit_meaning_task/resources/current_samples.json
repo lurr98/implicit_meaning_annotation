@@ -14,7 +14,16 @@
         "article_name": "Accommodate_Vegan_and_Vegetarian_Guests.txt",
         "context_before": "3. Check the ingredients of the foods you were planning on serving. Some may already be acceptable, or could be easily adapted (for example, using soydrink instead of cow's milk to make a dessert vegan).",
         "context_after": "4. Do not assume that vegetarians will be willing to pick the vegetables out of a meat dish. Prepare a separate, meat-free dish for them, without having used the same utensils for cooking their dishes and the other dishes.   5. Make sure that the quantity and quality of food served to all the guests is similar.",
-        "grouping": 0,
+        "grouping": 1,
         "ID": "ID0010"
+    },
+    "3": {
+        "sentence_1": "Keep in mind that regular screenings are important as you age since cholesterol levels usually increase as you get older.",
+        "sentence_2": "Keep in mind that regular screenings are important as you age since cholesterol levels usually increase <due to lifestyle changes and decreased activity levels> as you get older.",
+        "article_name": "Maintain_Normal_Cholesterol_Levels.txt",
+        "context_before": "### Getting Your Cholesterol Checked\n \n 1. Schedule a cholesterol screening every 5 years. If you don't have a history of heart disease, you'll need to have blood work done every 5 years to determine if your cholesterol is in a normal range.",
+        "context_after": "* Your cholesterol level will appear as 3 numbers: your HDL, LDL, and triglycerides.     * If you do have a history of heart disease, your doctor will recommend that you get your cholesterol checked more frequently. \n     * To screen your cholesterol, you'll need to get a blood sample that's analyzed in a lab.",
+        "grouping": 2,
+        "ID": "ID0020"
     }
 }
