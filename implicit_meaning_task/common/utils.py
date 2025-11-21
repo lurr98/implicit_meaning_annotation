@@ -4,15 +4,14 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 
 def remove_punctuation(text: str) -> str:
 
+    # remove timestamps
+    text = re.sub(r"Timestamp.*Z", "", text)
     text = "\n".join([el for el in text.split("\n") if el])
     text = re.sub(r"\s+(?=\d)", " ", text)
     # remove listed numbers before a line break
     text = re.sub(r"^(?=\d)", "´", text)
     text = re.sub(r"\d+\.?\n*$", "", text)
     
-    # remove timestamps
-    text = re.sub(r"Timestamp.*Z", "", text)
-
     # remove URLs
     text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
