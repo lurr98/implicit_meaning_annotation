@@ -14,7 +14,7 @@ if implicit == "No":
     col1, col2 = st.columns(2)
     with col1:
         context = st.checkbox(label="Context", help="The added information is recoverable from the context.")
-        reasoning = st.checkbox(label="Logical Reasoning", help="The added information is a logical premise or consequence of the rest of the text.")
+        reasoning = st.checkbox(label="Logical Reasoning", help="The added information is a logical premise or consequence of the given text.")
         background = st.checkbox(label="Background Knowledge", help="The information in the added text was already anticipated due to existing background knowledge.")
     with col2:
         other = st.checkbox("Other")
