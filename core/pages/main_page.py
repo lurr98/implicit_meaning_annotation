@@ -8,15 +8,6 @@ length_captcha = 4
 width = 200
 height = 150
 
-st.markdown("""
-<style>
-/* Hide the 'Press Ctrl+Enter to submit' helper text */
-.keyboard-instructions {
-    display: none !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
 # define the function for the captcha control
 def captcha_control():
     #control if the captcha is correct
@@ -36,9 +27,10 @@ def captcha_control():
         image = ImageCaptcha(width=width, height=height)
         data = image.generate(st.session_state.captcha)
         col1.image(data)
-        capta2_text = col2.text_area('Enter captcha text')
+        capta2_text = col2.text_input('Enter captcha text')
         
-        if st.button("Verify the code"):
+        # if st.button("Verify the code"):
+        if capta2_text:
             print(capta2_text, st.session_state.captcha)
             capta2_text = capta2_text.replace(" ", "")
             # if the captcha is correct, the controllo session state is set to True
@@ -52,9 +44,9 @@ def captcha_control():
                 st.error("🚨 The captcha is wrong, try again!")
                 del st.session_state.captcha
                 del st.session_state.verified
-        else:
-            #wait for the button click
-            st.stop()
+        # else:
+        #     #wait for the button click
+        #     st.stop()
 
 
 st.session_state.page = "main_page"
