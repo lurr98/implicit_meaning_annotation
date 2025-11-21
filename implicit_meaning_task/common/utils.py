@@ -4,7 +4,7 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 
 def remove_punctuation(text: str) -> str:
 
-    text = "Test\n".join([el for el in text.split("\n") if el.strip()])
+    text = "  \n".join([el for el in text.split("\n") if el.strip()])
     # remove listed numbers before a line break
     subbed_text = re.sub(r"\d\n", "", text)
 
