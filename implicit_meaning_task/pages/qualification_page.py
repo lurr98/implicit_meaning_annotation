@@ -27,9 +27,9 @@ else:
     st.markdown("# Qualification Task\n\nIn order to proceed with the annotation task you must first pass this qualification test. Before attempting this task, please read the intro carefully.\n\n")
 
     # print text and widgets
-    question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence_score, next_input = utils.print_annotation_schema(index, "qualification")
+    question, implicit, checkboxes, comment_implicit, comment_general, confidence_score, next_input = utils.print_annotation_schema(index, "qualification")
 
-    annotation = {"sentence_1": question["sentence_1"], "sentence_2": question["sentence_2"], "implicit_meaning": implicit, "if_implicit": checkboxes, "comment_implicit": comment_implicit, "comment_not_implicit": comment_not_implicit, "confidence_score": confidence_score}
+    annotation = {"sentence_1": question["sentence_1"], "sentence_2": question["sentence_2"], "implicit_meaning": implicit, "if_implicit": checkboxes, "comment_implicit": comment_implicit, "comment_general": comment_general, "confidence_score": confidence_score}
     samples = core_utils.read_json_from_file(core_utils.TASK_INFO["implicit_meaning_task"]["qualification_filepath"])
 
     if next_input:

@@ -4,9 +4,9 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 
 def remove_punctuation(text: str) -> str:
 
-    text = " ".join(text.split("\n"))
-    # remove listed numbers
-    subbed_text = re.sub(r"\d\.", "", text)
+    text = "\n".join([el for el in text.split("\n") if el])
+    # remove listed numbers before a line break
+    subbed_text = re.sub(r"\d\n", "", text)
     # remove URLs
     sub_subbed_text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", subbed_text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", sub_subbed_text)
@@ -79,15 +79,16 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     if sample_preload is None:
         # implicit_val, context_val, reasoning_val, complement_val, instruction_val, other_val = None, None, None, None, None, None
         implicit_val, context_val, reasoning_val, background_val, other_val = None, None, None, None, None
-        comment_implicit_val, comment_not_implicit_val = "", ""
+        comment_implicit_val, comment_general_val = "", ""
     else:
-        implicit_val, context_val, reasoning_val, background_val, other_val = (sample_preload["implicit_meaning"], 
+        implicit_val, context_val, reasoning_val, background_val, other_val, confidence = (sample_preload["implicit_meaning"], 
                                                                                                 sample_preload["if_implicit"][0], 
                                                                                                 sample_preload["if_implicit"][1], 
                                                                                                 sample_preload["if_implicit"][2], 
-                                                                                                sample_preload["if_implicit"][3]
+                                                                                                sample_preload["if_implicit"][3],
+                                                                                                sample_preload["confidence_score"]
                                                                                                 )
-        comment_implicit_val, comment_not_implicit_val = (sample_preload["comment_implicit"], sample_preload["comment_not_implicit"])
+        comment_implicit_val, comment_general_val = (sample_preload["comment_implicit"], sample_preload["comment_general"])
 
     question = samples[str(index)]
     # # display the "Sample 1/5" thing
@@ -96,7 +97,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     format_sample(question)
 
     context, reasoning, background, other = False, False, False, False
-    comment_implicit, comment_not_implicit = "", ""
+    comment_implicit, comment_general = "", ""
     # implicit = st.radio(
     #     ":grey-background[Does the first sentence implicitely convey the same meaning as the second one?]",
     #     ["Yes", "No"],
@@ -150,8 +151,8 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     )
 
     st.write("")
-    comment_not_implicit = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_not_implicit_val, max_chars=200)
-    if comment_not_implicit:
+    comment_general = st.text_input(key=10 * index + 7, label="Anything you'd like to point out?", value=comment_general_val, max_chars=200)
+    if comment_general:
         st.write(r"$\textsf{\scriptsize Thanks for your input!}$")
 
 
@@ -161,4 +162,4 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     else:
         next_input = None
 
-    return question, implicit, checkboxes, comment_implicit, comment_not_implicit, confidence, next_input
+    return question, implicit, checkboxes, comment_implicit, comment_general, confidence, next_input

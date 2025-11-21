@@ -84,5 +84,5 @@ else:
         """)
     else:
         st.markdown("""
-        ## You're human!\n\n Please proceed to the instruction now. Select **Instructions** on the navigation bar.
+        ## You're human!\n\n Please proceed to the instruction now. Select **Implicit Meaning Task Intro** on the navigation bar.
         """)

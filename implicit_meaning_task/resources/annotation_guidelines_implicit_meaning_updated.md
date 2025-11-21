@@ -128,7 +128,7 @@ The added information introduces specific entities, concepts or events that most
   **Don't forget to remove the cable.**
 
 * Put the game in that you got the save data from and see if it works.  
-  **Don't forget to remove the cable :blue-background[by Kenneth Arthur].**
+  **Don't forget to remove the cable :blue-background[by Apple].**
 
 ---
 
