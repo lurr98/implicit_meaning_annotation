@@ -65,7 +65,7 @@ The added information is recoverable from the context (including the article tit
 ---
 
 #### **2. Logical Reasoning**
-The added information is a logical premise or consequence given some mutual knowledge that the author can expect from most readers. In the following example, the author can expect most readers to know that you do not have to buy something if you already possess it.
+The added information is a logical premise or consequence of the rest of the text. In the following example, the fact that you do not have to buy something, if you already possess it can be logically inferred by most readers.
 
 **Example:**  
 *How_To_Shorten_a_Bike_Chain.txt*  
