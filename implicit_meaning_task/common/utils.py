@@ -80,10 +80,10 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     sample_preload = load_annotation(subtask, index)
     if sample_preload is None:
         # implicit_val, context_val, reasoning_val, complement_val, instruction_val, other_val = None, None, None, None, None, None
-        implicit_val, context_val, reasoning_val, background_val, other_val = None, None, None, None, None
+        implicit_val, context_val, reasoning_val, background_val, other_val, confidence_pre = None, None, None, None, None, None
         comment_implicit_val, comment_general_val = "", ""
     else:
-        implicit_val, context_val, reasoning_val, background_val, other_val, confidence = (sample_preload["implicit_meaning"], 
+        implicit_val, context_val, reasoning_val, background_val, other_val, confidence_pre = (sample_preload["implicit_meaning"], 
                                                                                                 sample_preload["if_implicit"][0], 
                                                                                                 sample_preload["if_implicit"][1], 
                                                                                                 sample_preload["if_implicit"][2], 
@@ -147,7 +147,7 @@ def print_annotation_schema(index: int, subtask: str="annotation") -> tuple[dict
     confidence = st.radio(
     "How confident are you about your annotation?\n\n1 corresponds to 'Not at all' and 5 to 'Very much'.",
     ["1", "2", "3", "4", "5"],
-    index=None,
+    index=confidence_pre,
     key=question["ID"],
     horizontal=True
     )
