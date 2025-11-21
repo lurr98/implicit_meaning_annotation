@@ -17,7 +17,7 @@ def remove_punctuation(text: str) -> str:
     text = re.sub(r"\n\s+(?=\W)", "", text, flags=re.MULTILINE)
     # remove URLs
     text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", text)
-    return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
+    return re.sub(r"[”#*\+<=>\[\]\\^_`{|}~]", "", text)
 
 
 def format_sample(question: dict) -> None:
