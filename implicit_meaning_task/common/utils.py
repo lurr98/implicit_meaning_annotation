@@ -9,6 +9,9 @@ def remove_punctuation(text: str) -> str:
     # remove listed numbers before a line break
     text = re.sub(r"^(?=\d)", "´", text)
     text = re.sub(r"\d+\.?\n*$", "", text)
+    
+    # remove timestamps
+    text = re.sub(r"Timestamp.*Z", "", text)
 
     # remove URLs
     text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", text)
