@@ -5,15 +5,16 @@ from core.scripts.utils import display_progress, read_json_from_file, load_annot
 def remove_punctuation(text: str) -> str:
 
     text = "\n".join([el for el in text.split("\n") if el])
-    # remove whitespace at beginning of lines
-    text = re.sub(r"\n\s+", "", text, flags=re.MULTILINE)
+
     # remove timestamps
     text = re.sub(r"Timestamp.*Z", "", text)
     text = re.sub(r"\s+(?=\d)", " ", text)
     # remove listed numbers before a line break
     text = re.sub(r"^(?=\d)", "´", text)
-    text = re.sub(r"\d+\.?\n?$", "", text)
+    text = re.sub(r"\d+\.?\n*$", "", text)
     
+    # remove whitespace at beginning of lines for letters
+    text = re.sub(r"\n\s+(?=\W)", "", text, flags=re.MULTILINE)
     # remove URLs
     text = re.sub(r"http[s]?://\S+|www\.\S+|<a href.+</a>", "<URL>", text)
     return re.sub(r"[”#*\+/<=>\[\]\\^_`{|}~]", "", text)
