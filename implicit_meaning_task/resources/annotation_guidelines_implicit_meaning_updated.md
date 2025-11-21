@@ -39,7 +39,7 @@ Read the following text and focus on the **bold sentence**.
 \
 :grey-background[What would most readers say?]
 
-:grey-background[Does altering the bold sentence meaningfully change how they understand the text?]
+:grey-background[Would altering the bold sentence meaningfully change how they understand the text?]
 
 ==SPLIT==
 
@@ -81,7 +81,7 @@ The added information is a logical premise or consequence given some mutual know
 
 #### **3. Background Knowledge**
 
-The information in the added text was already anticipated due to existing background knowledge. For instance, most readers would know that teachers usually prepare assignments for their students. This category might sometimes correlate with *Context*.
+The added information is a logical premise or consequence of the given text. In the following example, the fact that you do not have to buy something if you already possess it can be logically inferred by most readers.
 
 **Example:**  
 *Do_an_Assignment_on_Google_Classroom.txt*  

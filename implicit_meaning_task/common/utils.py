@@ -44,7 +44,7 @@ def format_sample(question: dict) -> None:
     st.markdown("")
     st.markdown("")
     st.markdown(":grey-background[What would most readers say?]")
-    st.markdown(":grey-background[Does altering the bold sentence meaningfully change how they understand the text?]")
+    st.markdown(":grey-background[Would altering the bold sentence meaningfully change how they understand the text?]")
 
     
 def check_all_checkboxes(implicit: str, checkboxes: list, comment: str, confidence: str) -> bool:
