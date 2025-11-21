@@ -219,7 +219,7 @@
         "sentence_1": "However, choosing this as a professional career certainly comes with many benefits!",
         "sentence_2": "However, choosing this as a professional career certainly comes with many benefits, <including subsidized college tuition for your children>.",
         "article_name": "Become_a_College_Professor.txt",
-        "context_before": "## Section::::Related wikiHows. \n \n [[Image:Professor Karen Whitney 7628.jpg|300px|right]]Teaching at a college or university is a rewarding career path, though much hard work and sacrifice is required.",
+        "context_before": "Teaching at a college or university is a rewarding career path, though much hard work and sacrifice is required.",
         "context_after": "[[Category:College University and Postgraduate]] [[Category:Teaching]]",
         "grouping": 0,
         "ID": "ID0250"
@@ -291,7 +291,7 @@
         "sentence_1": "This hairstyle is for any age and can be changed to suit anyone.",
         "sentence_2": "This hairstyle is for any age and can be changed to suit anyone and <any hair types>.",
         "article_name": "Put_Your_Hair_in_Two_Bunches.txt",
-        "context_before": "## Section::::Related wikiHows.",
+        "context_before": "",
         "context_after": "",
         "grouping": 0,
         "ID": "ID0330"
@@ -651,7 +651,7 @@
         "sentence_1": "Starting a website business can be a great way to work creatively in a field that you are passionate about.",
         "sentence_2": "Starting a website business can be a great way to work creatively in a field that you are passionate about, <sell a unique product or offer a special service>.",
         "article_name": "Start_a_Website_Business.txt",
-        "context_before": "## Section::::Related wikiHows.",
+        "context_before": "",
         "context_after": "Of course, there are millions of web businesses out there, so the challenge is starting one that will resonate with people. This article will help you start your own online business.   [[Category:Online and Home Businesses]]",
         "grouping": 1,
         "ID": "ID0341"
@@ -687,7 +687,7 @@
         "sentence_1": "You need to improve your physical ability as well as your ability to think strategically.",
         "sentence_2": "You need to improve your physical ability as well as your ability to think strategically <in order to win>.",
         "article_name": "Win_at_Badminton.txt",
-        "context_before": "## Section::::Related wikiHows. \n \n Badminton is a fun sport and a great form of exercise. Being a knockout badminton player requires serious practice and a strong mind.",
+        "context_before": "Badminton is a fun sport and a great form of exercise. Being a knockout badminton player requires serious practice and a strong mind.",
         "context_after": "",
         "grouping": 1,
         "ID": "ID0381"
