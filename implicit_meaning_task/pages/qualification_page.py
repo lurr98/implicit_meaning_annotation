@@ -31,8 +31,8 @@ elif user_qualification == -1:
     "- :grey-background[to grip the handlebars too tightly] → Implicit Meaning (Context)")
     st.markdown("\n\n Click this button to set your qualification status to 'qualified'.")
     if st.button("Qualify Now"):
-        st.write(st.session_state.user_id)
         user_repository.set_qualification(st.session_state.user_id, 1)
+        st.rerun()
 else:
     # get index of sample
     index = int(st.session_state.qualification_progress)
