@@ -24,11 +24,11 @@ elif user_qualification == -1:
 
     st.markdown("\n## You did not pass the qualification test. \n\n You will still be admitted to the annotation task now as this is part of the course.\n\n")
     st.markdown("The correct answers for the qualification test are as follows:\n" \
-    "- :grey_background[so you 'll get a better bargain] → Implicit Meaning (Logical Reasoning)" \
-    "- :grey_background[as you pack] → Implicit Meaning (Context)" \
-    "- :grey_background[on smaller peripheral bones] → New Information" \
-    "- :grey_background[and that you use a strong password that includes at least 20 characters] → New Information" \
-    "- :grey_background[to grip the handlebars too tightly] → Implicit Meaning (Context)")
+    "- :grey-background[so you 'll get a better bargain] → Implicit Meaning (Logical Reasoning)" \
+    "- :grey-background[as you pack] → Implicit Meaning (Context)" \
+    "- :grey-background[on smaller peripheral bones] → New Information" \
+    "- :grey-background[and that you use a strong password that includes at least 20 characters] → New Information" \
+    "- :grey-background[to grip the handlebars too tightly] → Implicit Meaning (Context)")
     st.markdown("\n\n Click this button to set your qualification status to 'qualified'.")
     if st.button("Qualified Now"):
         user_repository.set_qualification(1)
