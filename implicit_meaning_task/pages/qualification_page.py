@@ -33,7 +33,6 @@ elif user_qualification == -1:
     if st.button("Qualify Now"):
         st.write(st.session_state.user_id)
         user_repository.set_qualification(st.session_state.user_id, 1)
-        st.experimental_rerun()
 else:
     # get index of sample
     index = int(st.session_state.qualification_progress)
