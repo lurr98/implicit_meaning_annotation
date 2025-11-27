@@ -30,7 +30,7 @@ elif user_qualification == -1:
     "- :grey-background[and that you use a strong password that includes at least 20 characters] → New Information\n" \
     "- :grey-background[to grip the handlebars too tightly] → Implicit Meaning (Context)")
     st.markdown("\n\n Click this button to set your qualification status to 'qualified'.")
-    if st.button("Qualified Now"):
+    if st.button("Qualify Now"):
         user_repository.set_qualification(1)
         st.experimental_rerun()
 else:
