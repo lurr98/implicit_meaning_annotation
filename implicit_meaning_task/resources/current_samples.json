@@ -967,7 +967,7 @@
         "sentence_1": "You also need to contribute a matching portion yourself.",
         "sentence_2": "You also need to contribute a matching portion yourself <as the employer>.",
         "context_before": "3. Estimate the amount of Social Security and Medicare taxes. You need to withhold and deposit taxes for both Social Security and Medicare, which are collectively called \u201cFICA\u201d taxes.",
-        "context_after": "See Publication 15 for how to calculate the amount.    * As of 2017, the Social Security tax rate is 6.2% for both the employer and employee. This tax is applied only to the first $127,200 of wages. For example, if your employee makes $500 a week, then you will withhold a total of 12.4%.",
+        "context_after": "See Publication 15 for how to calculate the amount.    * As of 2017, the Social Security tax rate is 6.2% for both the employer and employee. This tax is applied only to the first $127,200 of wages. For example, if your employee makes 500 a week, then you will withhold a total of 12.4%.",
         "ID": "qcDSTOt98O",
         "grouping": 2
     }
