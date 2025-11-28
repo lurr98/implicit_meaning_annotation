@@ -13,7 +13,7 @@
         "sentence_1": "However, you only get the rewards if you spend a certain amount of money.",
         "sentence_2": "However, you only get the rewards if you spend a certain amount of money <during a short period of time>.",
         "context_before": "Just because you can pay your mortgage this way doesn\u2019t mean you should. Consider why you want to use your credit card:\n * You are trying to earn a bonus on a rewards card. Some reward cards will give you a huge number of points (35,000+) for new users.",
-        "context_after": "In this limited situation, it might be a good idea to make a mortgage payment with your credit card. For example, your bonus might be $500, which will be more than the fee you pay to use a credit card.    * You are trying to earn regular rewards.",
+        "context_after": "In this limited situation, it might be a good idea to make a mortgage payment with your credit card. For example, your bonus might be `$`500, which will be more than the fee you pay to use a credit card.    * You are trying to earn regular rewards.",
         "ID": "_LQIvsIZuW",
         "grouping": 0
     },
@@ -147,7 +147,7 @@
         "article_name": "Apply_for_a_Work_Permit_in_Canada.txt",
         "sentence_1": "Biometrics are currently required for visa applicants from Europe, Africa, and the Middle East, and will soon be required for all visa applicants.",
         "sentence_2": "Biometrics <including fingerprints and a digital photo for identification> are currently required for visa applicants from Europe, Africa, and the Middle East, and will soon be required for all visa applicants.",
-        "context_before": "For an open work permit, you must pay an additional \\$100 CAD on top of the work permit fee. The biometrics fee is an additional \\$85 CAD.\n 2. Complete your biometrics.",
+        "context_before": "For an open work permit, you must pay an additional `$`100 CAD on top of the work permit fee. The biometrics fee is an additional `$`85 CAD.\n 2. Complete your biometrics.",
         "context_after": "To submit your biometrics, make an appointment with an approved Visa Application Center (VAC).    * An approved list of VACs can be found at www.canada.ca.     * United States applicants can visit Application Support Centers across the country.",
         "grouping": 0,
         "ID": "9yZzXGLtt5"
@@ -156,7 +156,7 @@
         "article_name": "Take_Action_Against_Lease_Violations.txt",
         "sentence_1": "Before you make the repairs yourself and deduct the costs from your rent payment, you must notify your landlord of your intentions and give them an opportunity to fix the problem.",
         "sentence_2": "Before you make the repairs yourself and deduct the costs from your rent payment, you must notify your landlord of your intentions <to use the repair and deduct remedy> and give them an opportunity to fix the problem.",
-        "context_before": "You will end up paying $100 out-of-pocket. \n 5. Inform your landlord of the needed repairs.",
+        "context_before": "You will end up paying `$`100 out-of-pocket. \n 5. Inform your landlord of the needed repairs.",
         "context_after": "Whenever you give notice to your landlord, it should be in writing. The letter should contain a detailed description of the defect and the repairs that are required. Make sure you sign and date the letter and keep a copy for your own records.    * Send the completed letter to your landlord through the mail or deliver a copy to them in person.",
         "ID": "Gj4PhyODJB",
         "grouping": 0
@@ -850,7 +850,7 @@
         "sentence_1": "You need to know how big or small a part of the business the person should receive.",
         "sentence_2": "You need to know how big or small a part of the business the person should receive <in exchange for services rendered>.",
         "context_before": "Calculate the value of the business. Before you can determine the value of any sweat equity, you'll first need to determine the value of the business. That's because you'll effectively be compensating somebody with \"part\" of the business.",
-        "context_after": "* One way to calculate the value of a new business is by simply looking at the startup capital that's been put into it. For example, if you put $250,000 into a startup, then the startup is worth $250,000.     * Use comparables to determine the worth of your company. Check out how much companies like yours are selling for on sites like BizBuySell and BizQuest.",
+        "context_after": "* One way to calculate the value of a new business is by simply looking at the startup capital that's been put into it. For example, if you put `$`250,000 into a startup, then the startup is worth `$`250,000.     * Use comparables to determine the worth of your company. Check out how much companies like yours are selling for on sites like BizBuySell and BizQuest.",
         "ID": "NVvkpyvsGr",
         "grouping": 2
     },
