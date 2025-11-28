@@ -711,12 +711,12 @@
         "grouping": 2
     },
     "80": {
-        "article_name": "Identify_a_Clandestine_Drug_Lab.txt",
-        "sentence_1": "A large amount of cold medication packages.",
-        "sentence_2": "A large amount of cold medication packages <containing ephedrine or pseudoephedrine>.",
-        "context_before": "Look at their trash. While it's not recommend for you to rummage through people's garbage, look for any waste near or around their house. Common wastes include:\n *",
-        "context_after": "* Opened lithium batteries     * Paint thinner\n     * Drain Cleaner/Lye\n     * Engine starter fluid\n     * Antifreeze\n     * Acetone\n     * Matchbooks or boxes\n     * Epsom salt or rock salt bags\n     * Muriatic acid\n     * Rubbing Alcohol. \n     * Coleman fuel\n     * Caustic soda bags or cans\n     * Industrial chemical drums\n     * Laboratory glassware\n     * 2-liter soda bottles with tubing attached\n     * Propane tanks with valves that have turned blue\n     * Funnels\n     * Rubber tubing or plumbing pipes \n     * Gloves",
-        "ID": "bgXZSBbt5H",
+        "article_name": "Write_a_Basic_Advertising_Plan.txt",
+        "sentence_1": "This may include testing your advertising pitch on your target demographic.",
+        "sentence_2": "This may include testing your advertising pitch on your target demographic <using a focus group or another method>.",
+        "context_before": "* Create a budget. This should list all your advertising options, their cost, who you pay and any other expenses. \n 2. Do market research to better establish your advertising plan.",
+        "context_after": "Make sure to price this into your advertising budget, or use crowdsourcing as you move through your advertising plan.    * An example of advertising crowdsourcing is asking for consumer feedback on Facebook. You can also send out a survey to existing customers or create a contest for the best advertising idea or pitch.",
+        "ID": "czFfN_69IX",
         "grouping": 2
     },
     "81": {
