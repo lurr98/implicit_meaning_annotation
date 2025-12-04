@@ -38,11 +38,13 @@ def captcha_control():
                 del st.session_state.captcha
                 col1.empty()
                 col2.empty()
+                st.rerun()
             else:
                 # if the captcha is wrong, the controllo session state is set to False and the captcha is regenerated
                 st.error("🚨 The captcha is wrong, try again!")
                 del st.session_state.captcha
                 del st.session_state.verified
+                st.rerun()
         else:
             #wait for the button click
             st.stop()
