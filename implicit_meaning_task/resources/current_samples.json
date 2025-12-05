@@ -821,7 +821,7 @@
     "92": {
         "article_name": "Stop_Vandalizing_Wikipedia.txt",
         "sentence_1": "You will get talk page comments if you vandalize Wikipedia.",
-        "sentence_2": "You will get talk page comments if you vandalize Wikipedia and be warned by other users, not only edit filters.",
+        "sentence_2": "You will get talk page comments if you vandalize Wikipedia <and be warned by other users, not only edit filters>.",
         "context_before": "## Tips\n \n   * If you vandalize Wikipedia they will <a href=\"Revert%20Vandalism%20on%20wikiHow\">revert</a> your edits. \n *",
         "context_after": "",
         "ID": "FU1TXigGXi",
