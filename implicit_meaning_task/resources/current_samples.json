@@ -270,15 +270,6 @@
         "grouping": 0
     },
     "31": {
-        "article_name": "Get_a_Pisces_to_Like_You.txt",
-        "sentence_1": "The main point is most Pisces, of whatever mould, are attracted to kindness, compassion, understanding and forgiveness.",
-        "sentence_2": "The main point is most Pisces, of whatever mould, are attracted to kindness, compassion, understanding and forgiveness, <like most other human beings>.",
-        "context_before": "## Warnings\n \n * Not all Pisces will behave the same. These are generalizations and will apply to most Pisces, in differing degrees.",
-        "context_after": "* So being kind, compassionate, understanding and forgiving would be great ways to get a Pisces to like you in the first place.   * Once you are closer to them, then learn about your particular Pisces and what makes him or her ticks. \n   * Be careful!",
-        "ID": "OYIT8U4u_e",
-        "grouping": 0
-    },
-    "32": {
         "sentence_1": "To be safest, just assume that everything you bring is going to get wet.",
         "sentence_2": "To be safest <as you pack>, just assume that everything you bring is going to get wet.",
         "article_name": "Prepare_to_Go_Swimming.txt",
@@ -287,7 +278,7 @@
         "grouping": 0,
         "ID": "ID0282"
     },
-    "33": {
+    "32": {
         "article_name": "Decide_What_to_do_on_a_First_Date.txt",
         "sentence_1": "Talk with your date.",
         "sentence_2": "Talk with your date <about their interests>.",
@@ -296,7 +287,7 @@
         "ID": "lveBcJV7hj",
         "grouping": 0
     },
-    "34": {
+    "33": {
         "article_name": "Deal_with_Nosy_Coworkers.txt",
         "sentence_1": "Assess if the person is trying to be friendly.",
         "sentence_2": "Assess if the person is trying to be friendly <if you often find people nosy>.",
@@ -305,7 +296,7 @@
         "ID": "s8l_EOcs65",
         "grouping": 0
     },
-    "35": {
+    "34": {
         "article_name": "Be_a_Good_Apartment_Neighbor.txt",
         "sentence_1": "Soft footwear makes less noise than heavy duty items such as boots.",
         "sentence_2": "Soft footwear makes less noise than heavy duty items such as boots or <high heels>.",
@@ -314,13 +305,22 @@
         "ID": "-DwydNjsgs",
         "grouping": 0
     },
-    "36": {
+    "35": {
         "article_name": "Strengthen_Your_Relationship_with_Your_Best_Friend.txt",
         "sentence_1": "If you both like each other, you should both be dedicated to making your friendship the best it can possibly be.",
         "sentence_2": "If you both like each other, you should both be dedicated to making your friendship the best it can possibly be, <which means putting in equal effort>.",
         "context_before": "4. Take equal responsibility for the friendship. It isn\u2019t fair to expect your best friend to be the one to put the most effort into your friendship.",
         "context_after": "* Take turns choosing activities to do together or driving to each other\u2019s houses to share the responsibility.     * If your friendship is having problems, you should both share the weight of trying to come up with a solution. \n   5. Work through feelings of jealousy.",
         "ID": "G6HoaNS1MA",
+        "grouping": 0
+    },
+    "36": {
+        "article_name": "Get_a_Pisces_to_Like_You.txt",
+        "sentence_1": "The main point is most Pisces, of whatever mould, are attracted to kindness, compassion, understanding and forgiveness.",
+        "sentence_2": "The main point is most Pisces, of whatever mould, are attracted to kindness, compassion, understanding and forgiveness, <like most other human beings>.",
+        "context_before": "## Warnings\n \n * Not all Pisces will behave the same. These are generalizations and will apply to most Pisces, in differing degrees.",
+        "context_after": "* So being kind, compassionate, understanding and forgiving would be great ways to get a Pisces to like you in the first place.   * Once you are closer to them, then learn about your particular Pisces and what makes him or her ticks. \n   * Be careful!",
+        "ID": "OYIT8U4u_e",
         "grouping": 0
     },
     "37": {
